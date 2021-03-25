@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+.mobile-wrapper {
+    padding: 0 20px;
+    height: 100%;
+}
+
+
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header__logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.header__call {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 14px;
+}
+
+.header__call > span {
+    font-size: 16px;
+    color: #2D81D5;
+}
+
+
+
+/*네비게이션*/
+
+nav {
+    height: 74px;
+}
+
+#gnb {
+    width: 100%;
+}
+
+#gnb > li {
+    float: left;
+    width: 33.3%;
+}
+
+#gnb a {
+    display: block;
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    background: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+/*section1 - 메인*/
+
+#section1 {
+    width: 100%;
+    height: 480px;
+    background: #2D81D5;
+    position: relative;
+    overflow: hidden;
+}
+
+/*배경이미지*/
+.section1__imgBox {
+    width: 309px;
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+}
+
+.section1__imgBox > img {
+    width: 100%;
+}
+
+/*메인 텍스트*/
+.section1__text {
+    position: absolute;
+    color: #fff;
+}
+
+.section1__text1 {
+    top: 35px;
+    font-size: 14px;
+}
+
+.section1__text2 {
+    top: 60px;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.section1__text2 > span {
+    color: #FFE600;
+}
+
+
+/*상담신청 박스*/
+.section1__applyBox {
+    top: 135px;
+    width: 90%;
+    height: 132px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 1px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.section1__applyBox > div {
+    font-size: 12px;
+    color: #196BBC;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+/*이름, 연락처 form 박스*/
+.section1__form {
+    color: #333;
+    display: flex;
+}
+
+.section1__inputBox {
+    width: 75%;
+    margin-bottom: 5px;
+}
+
+.section1__input {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.section1__input > label {
+    display: inline-block;
+    width: 20%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.section1__input > input {
+    width: 70%;
+    height: 25px;
+    border: 0;
+    background: #EAF2FB;
+    text-indent: 5px;
+}
+
+/*상담신청 버튼*/
+.section1__buttonBox {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 25%;
+}
+
+.section1__button {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 55px;
+    background: #2D81D5;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*개인정보 동의*/
+.section1__form2 {
+    height: 25px;
+}
+
+.section1__form2 > input {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+}
+
+.section1__form2 > label {
+    font-size: 11px;
+}
+
+.section1__text3 {
+    top: 275px;
+    width: 100%;
+}
+
+.section1__text3 > span {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 7%;
+}
+
+.section1__text3 > span > img {
+    vertical-align: middle;
+    margin-right: 2px;
+    width: 10px;
+}
+
+
+
+/*section2 - 대출별 메뉴*/
+
+#section2 {
+    width: 100%;
+    height: 570px;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.section2__contentBox {
+    width: 100%;
+    height: 85px;
+    background: #DBEDFF;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section2__imgBox {
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+.section2__imgBox > img {
+    height: 100%;
+}
+
+.section2__textBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.section2__textBox > div:nth-child(1) {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+
+.section2__textBox > div:nth-child(2) {
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+    line-height: 16px;
+}
+
+.section2__buttonBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.section2__buttonBox > button {
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    background: #2D81D5;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+
+/*footer*/
+
+footer {
+    background: #f5f5f5;
+    padding: 20px 0;
+}
+
+.footer__policy {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.footer__policy a {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.footer__text {
+    font-size: 13px;
+    color: #555;
+    padding-bottom: 10px;
+}
+
+.footer__text > span {
+    font-weight: 600;
+}
+
+
+
+/*팝업*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup__bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+.popup__contentBg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 70%;
+    background: #eee;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.popup__contentBg > h3 {
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.popup__content {
+    background: #fff;
+    height: 90%;
+    overflow: auto;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 5px;
+    font-size: 12px;
+}
+
+.popup__content > p {
+    padding: 5px 0;
+}
+
+.popup__contentBg > .close {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
