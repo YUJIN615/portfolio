@@ -1,0 +1,838 @@
+@charset "utf-8";
+
+/*이용약관 팝업*/
+.policy-popup {
+    display:none;
+}
+
+.policy-popup-bg {
+    width:590px;
+    height:590px;
+    background: #121828;
+    position: absolute;
+    bottom:150px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 9500;
+    color: #eee;
+    font-weight: 400;
+    text-align:left;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.policy-popup-bg > h4 {
+    font-size:18px;
+    font-weight:500;
+    position:relative;
+    top:40px;
+    left:40px;
+}
+
+.policy-popup-content {
+    width:520px;
+    height:450px;
+    margin:55px auto 0;
+    overflow:auto;
+    background:#0F121D;
+    font-size:14px;
+    font-weight:300;
+    line-height:24px;
+    padding:10px 20px 10px 15px;
+    box-sizing:border-box;
+}
+
+.policy-popup-close-btn {
+    position:absolute;
+    right:40px;
+    bottom:20px;
+    cursor:pointer;
+}
+
+.policy-popup-content::-webkit-scrollbar {
+    width:7px;
+}
+
+.policy-popup-content::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    background-color:#333953;
+}
+
+.policy-popup-content::-webkit-scrollbar-track {
+    background-color:#14141a;
+    width:10px;
+}
+
+
+
+/*공지사항 팝업*/
+.notice-popup {
+    display: none;
+}
+
+.notice-popup-bg {
+    width: 570px;
+    height: 640px;
+    background: #121828;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9500;
+    color: #eee;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.notice-popup-bg > h4 {
+    font-size: 32px;
+    padding: 50px 0 80px;
+}
+
+.notice-popup-bg > h4:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+
+.notice-popup-content {
+    font-size: 15px;
+    height: 350px;
+    overflow: auto;
+    color: #ddd;
+    font-weight: 400;
+}
+
+.notice-popup-bg .off-popup-check {
+    position: absolute;
+    left: 30px;
+    bottom: 23px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999;
+    height: 20px;
+}
+
+.notice-popup-bg .off-popup-check > input {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.notice-popup-bg .off-popup-check > label {
+    vertical-align: middle;
+}
+
+.notice-popup-close-btn {
+    position:absolute;
+    right:30px;
+    bottom:20px;
+    cursor:pointer;
+}
+
+.notice-popup-content::-webkit-scrollbar {
+    width:7px;
+}
+
+.notice-popup-content::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    background-color:#333953;
+}
+
+.notice-popup-content::-webkit-scrollbar-track {
+    background-color:#14141a;
+    width:10px;
+}
+
+
+
+/*점검안내 팝업*/
+.inspect-popup{
+    display: none;
+}
+
+.inspect-popup-bg {
+    width: 570px;
+    height: 540px;
+    background: #121828;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9500;
+    color: #eee;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.inspect-popup-bg > h4 {
+    font-size: 32px;
+    padding: 50px 0 80px;
+}
+
+.inspect-popup-bg > h4:after {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+
+.inspect-popup-content {
+    height: 200px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.inspect-popup-content > span {
+    font-size: 15px;
+    color: #ddd;
+}
+
+.popup-logo {
+    width: 175px;
+    margin: 0 auto;
+}
+
+.popup-logo > img {
+    width: 100%;
+}
+
+.inspect-popup-bg .off-popup-check {
+    position: absolute;
+    left: 30px;
+    bottom: 23px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999;
+    height: 20px;
+}
+
+.inspect-popup-bg .off-popup-check > input {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.inspect-popup-bg .off-popup-check > label {
+    vertical-align: middle;
+}
+
+.inspect-popup-close-btn {
+    position:absolute;
+    right:30px;
+    bottom:20px;
+    cursor:pointer;
+}
+
+
+
+/*차단 안내 팝업*/
+.block-popup {
+    display: none;
+}
+
+.block-popup-bg {
+    width: 570px;
+    height: 400px;
+    background: #121828;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9500;
+    color: #eee;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.block-popup-bg > h4 {
+    font-size: 32px;
+    padding: 50px 0 20px;
+}
+
+.block-popup-bg > h4:after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+
+.block-popup-img {
+    width: 70px;
+    margin: 20px auto;
+}
+
+.block-popup-img > img {
+    width: 100%;
+}
+
+.block-popup-content {
+    height: 80px;
+    font-size: 23px;
+    line-height: 35px;
+}
+
+.block-popup-content > span {
+    font-size: 15px;
+    color: #ddd;
+}
+
+.block-popup-home-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #0C1020;
+    cursor:pointer;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+
+
+/*팝업1*/
+.popup1 {
+    display: none;
+}
+
+.popup1-bg {
+    width: 570px;
+    height: 640px;
+    background: #121828;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9500;
+    color: #eee;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.popup1-bg > h4 {
+    font-size: 32px;
+    padding: 50px 0 80px;
+}
+
+.popup1-bg > h4:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+
+.popup1-content {
+    font-size: 15px;
+    height: 350px;
+    overflow: auto;
+    color: #ddd;
+    font-weight: 400;
+}
+
+.popup1-bg > form {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #0C1020;
+}
+
+.popup1-bg .off-popup-check {
+    position: absolute;
+    left: 30px;
+    bottom: 23px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999;
+    height: 20px;
+}
+
+.popup1-bg .off-popup-check > input {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.popup1-bg .off-popup-check > label {
+    vertical-align: middle;
+}
+
+.popup1-close-btn {
+    position:absolute;
+    right:30px;
+    bottom:20px;
+    cursor:pointer;
+}
+
+
+
+/*팝업2*/
+.popup2 {
+    display: none;
+}
+
+.popup2-bg {
+    width: 570px;
+    height: 640px;
+    background: #121828;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9500;
+    color: #eee;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.popup2-bg > h4 {
+    font-size: 32px;
+    padding: 50px 0 80px;
+}
+
+.popup2-bg > h4:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+
+.popup2-content {
+    font-size: 15px;
+    height: 350px;
+    overflow: auto;
+    color: #ddd;
+    font-weight: 400;
+}
+
+.popup2-bg > form {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #0C1020;
+    text-align: center;
+}
+
+.popup2-close-btn {
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+
+
+/*팝업3*/
+.popup3 {
+    display: none;
+}
+
+.popup3-bg {
+    width: 570px;
+    height: 640px;
+    background: #121828;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9500;
+    color: #eee;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 45px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.popup3-bg > h4 {
+    font-size: 32px;
+    padding: 50px 0 80px;
+}
+
+.popup3-bg > h4:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+
+.popup3-content {
+    font-size: 15px;
+    height: 350px;
+    overflow: auto;
+    color: #ddd;
+    font-weight: 400;
+}
+
+.popup3-bg > form {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #0C1020;
+    text-align: center;
+    display: flex;
+}
+
+.popup3-bg > form > div {
+    width: 49%;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.popup3-bg > form > span {
+    display: inline-block;
+    width: 1px;
+    height: 45px;
+    border-right: 1px solid #777;
+    position: relative;
+    top: 7px;
+}
+
+
+@media screen and (max-width:1000px) {
+
+    /*이용약관 팝업*/
+    .policy-popup-bg {
+        max-width:80%;
+        height:400px;
+        background:#151926;
+        position:absolute;
+        bottom:150px;
+        left:50%;
+        transform:translateX(-50%);
+        z-index:8700;
+        text-align:left;
+    }
+    
+    .policy-popup-bg > h4 {
+        font-size:14px;
+        font-weight:500;
+        position:relative;
+        top:25px;
+        left:30px;
+    }
+    
+    .policy-popup-content {
+        width:90%;
+        height:300px;
+        margin:35px auto 0;
+        overflow:auto;
+        background:#0F121D;
+        font-size:11px;
+        font-weight:300;
+        line-height:24px;
+        padding:10px 20px 10px 15px;
+    }
+
+
+
+    /*공지사항 팝업*/
+    .notice-popup-bg {
+        max-width:80%;
+        height: 430px;
+        background:#151926;
+        position:absolute;
+        padding: 20px 20px;
+    }
+    
+    .notice-popup-bg > h4 {
+        font-size:16px;
+        font-weight:500;
+        padding: 10px 0 20px;
+    }
+
+    .notice-popup-bg > h4:after {
+        width: 70px;
+    }
+    
+    .notice-popup-content {
+        width: 100%;
+        height: 300px;
+        overflow:auto;
+        background:#0F121D;
+        font-size:12px;
+        font-weight:300;
+        line-height:24px;
+        padding:10px 20px 10px 15px;
+    }
+    
+    .notice-popup-bg .off-popup-check > input {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .notice-popup-bg .off-popup-check > label {
+        font-size: 12px;
+    }
+    
+    .notice-popup-close-btn {
+        font-size: 12px;
+    }
+
+
+
+    /*점검안내 팝업*/
+    .inspect-popup-bg {
+        max-width:80%;
+        height: 330px;
+        background:#151926;
+        position:absolute;
+        padding: 20px 20px;
+    }
+    
+    .inspect-popup-bg > h4 {
+        font-size:16px;
+        font-weight:500;
+        padding: 10px 0 40px;
+    }
+
+    .inspect-popup-bg > h4:after {
+        width: 180px;
+    }
+
+    .inspect-popup-content {
+        height: 150px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    
+    .inspect-popup-content > span {
+        font-size: 12px;
+        color: #ddd;
+    }
+    
+    .popup-logo {
+        width: 100px;
+        margin: 0 auto;
+    }
+    
+    .popup-logo > img {
+        width: 100%;
+    }
+    
+    .inspect-popup-bg .off-popup-check {
+        height: 20px;
+    }
+
+    .inspect-popup-bg .off-popup-check > input {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .inspect-popup-bg .off-popup-check > label {
+        font-size: 12px;
+    }
+    
+    .inspect-popup-close-btn {
+        font-size: 12px;
+    }
+
+
+
+    /*차단안내 팝업*/
+    .block-popup-bg {
+        max-width:80%;
+        height: 260px;
+        background:#151926;
+        position:absolute;
+        padding: 20px 20px;
+    }
+    
+    .block-popup-bg > h4 {
+        font-size:16px;
+        font-weight:500;
+        padding: 10px 0 20px;
+    }
+
+    .block-popup-bg > h4:after {
+        width: 80px;
+    }
+
+    .block-popup-img {
+        width: 50px;
+        margin: 10px auto 20px;
+    }
+    
+    .block-popup-content {
+        height: 80px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+    .block-popup-content > span {
+        font-size: 12px;
+    }
+    
+    .block-popup-home-btn {
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+
+
+
+    /*팝업1*/
+    .popup1-bg {
+        max-width:80%;
+        height: 430px;
+        background:#151926;
+        position:absolute;
+        padding: 20px 20px;
+    }
+    
+    .popup1-bg > h4 {
+        font-size:16px;
+        font-weight:500;
+        padding: 10px 0 40px;
+    }
+
+    .popup1-bg > h4:after {
+        width: 80px;
+    }
+
+    .popup1-content {
+        height: 150px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .popup1-bg > form {
+        height: 50px;
+    }
+
+    .popup1-bg .off-popup-check {
+        bottom: 17px;
+    }
+
+    .popup1-bg .off-popup-check > input {
+        width: 10px;
+        height: 10px;
+    }
+
+    .popup1-bg .off-popup-check > label {
+        font-size: 12px;
+    }
+    
+    .popup1-close-btn {
+        font-size: 12px;
+        bottom: 15px;
+    }
+
+
+
+    /*팝업2*/
+    .popup2-bg {
+        max-width:80%;
+        height: 430px;
+        background:#151926;
+        position:absolute;
+        padding: 20px 20px;
+    }
+    
+    .popup2-bg > h4 {
+        font-size:16px;
+        font-weight:500;
+        padding: 10px 0 40px;
+    }
+
+    .popup2-bg > h4:after {
+        width: 80px;
+    }
+
+    .popup2-content {
+        height: 150px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    
+    .popup2-bg > form {
+        height: 50px;
+    }
+
+    .popup2-bg > form > div {
+        line-height: 50px;
+    }
+
+    .popup2-close-btn {
+        font-size: 12px;
+    }
+
+
+
+    /*팝업2*/
+    .popup3-bg {
+        max-width:80%;
+        height: 430px;
+        background:#151926;
+        position:absolute;
+        padding: 20px 20px;
+    }
+    
+    .popup3-bg > h4 {
+        font-size:16px;
+        font-weight:500;
+        padding: 10px 0 40px;
+    }
+
+    .popup3-bg > h4:after {
+        width: 80px;
+    }
+
+    .popup3-content {
+        height: 150px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .popup3-bg > form {
+        height: 50px;
+    }
+
+    .popup3-bg > form > div {
+        line-height: 50px;
+    }
+
+    .popup3-bg > form > span {
+        height: 35px;
+    }
+
+    .popup3-confirm-btn {
+        font-size: 12px;
+    }
+
+    .popup3-close-btn {
+        font-size: 12px;
+    }
+    
+}

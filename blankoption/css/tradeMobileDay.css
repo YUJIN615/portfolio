@@ -1,0 +1,1263 @@
+@charset "utf-8";
+
+* {
+    padding:0;
+    margin:0;
+}
+
+li {
+    list-style:none;
+}
+
+a {
+    text-decoration:none;
+    color:#333;
+}
+
+img {
+    border:0;
+    vertical-align:bottom;
+}
+
+input {
+    outline:0;
+}
+
+.scroll {
+    overflow-y: scroll !important;
+}
+
+header {
+    width:100%;
+    height:45px;
+    background:#fff;
+    position:relative;
+}
+
+header > div {
+    display:inline-block;
+}
+
+.nav-btn {
+    display:inline-block;
+    margin-left:20px;
+    transform:translateY(55%)
+}
+
+.nav-btn > i {
+    color:#3b4a87;
+    font-size:22px;
+}
+
+/*입금*/
+.deposit-box {
+    position:absolute;
+    right:70px;
+    top:50%;
+    transform:translateY(-50%)
+}
+
+.deposit-box > div {
+    display:inline-block;
+}
+
+.deposit-box > div:nth-child(1) {
+    background:#eee;
+    padding:0 10px;
+    height:27px;
+    border-radius:5px 0 0 5px;
+    position:relative;
+    left:6px;
+    top:1px;
+    cursor:pointer;
+}
+
+.deposit-box > div:nth-child(1) > span:nth-child(1) {
+    display:inline-block;
+    padding-right:10px;    
+    color:#4770d6;
+    font-size:14px;
+    line-height:27px;
+}
+
+.deposit-box > div:nth-child(1) > span:nth-child(2) {
+    font-size:11px;
+    margin-right:3px;
+    line-height:27px;
+}
+
+.deposit-box > div:nth-child(1) > i {
+    color:#999;
+    font-size:10px;
+}
+
+.deposit-box > a {
+    width:40px;
+    height:27px;
+    background:#3a54a4;
+    border-radius:0 5px 5px 0;
+    text-align:center;
+    color:#ddd;
+    font-size:11px;
+    line-height:27px;
+    display:inline-block;
+}
+
+/*account box*/
+.account-box {
+    position:absolute;
+    top:40px;
+    right:10px;
+    width:350px;
+    border:1px solid #ddd;
+    background:#fff;
+    border-radius:5px;
+    font-size:12px;
+    z-index:5000;
+    display:none;
+}
+
+.account {
+    padding:7px 0;
+    width:100%;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+.account > a {
+    display:block;
+    width:100%;
+    font-size:12px;
+}
+
+.account > a > i {
+    margin-left:10px;
+}
+
+.wallet {
+    padding:5px 0;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+.wallet-content {
+    padding:5px 0;
+    background:#e6f0f7;
+    border-bottom:1px solid #ddd;
+}
+
+.wallet-content li {
+    text-align:left;
+}
+
+.wallet-content li > a {
+    display:block;
+    width:100%;
+    padding:5px 0;
+    font-size:12px;
+}
+
+.wallet-content li > a > span {
+    display:inline-block;
+}
+
+.wallet-content li > a > span:nth-child(1) {
+    text-align:left;
+    margin-left:20px;
+    width:160px;
+}
+
+.wallet-content img {
+    width:15px;
+    margin-right:10px;
+}
+
+.wallet-content li > a > span:nth-child(2) {
+    text-align:right;
+    width:100px;
+}
+
+.wallet-content li > a > span:nth-child(3) {
+    text-align:right;
+    width:40px;
+}
+
+.wallet-content li > a:hover {
+    background:#dbe8f1;
+}
+
+.logout {
+    padding:7px 0 8px;
+    border-bottom:0;
+    width:100%;
+    text-align:center;
+}
+
+.logout > a {
+    display:block;
+    width:100%;
+    color:#aaa;
+}
+
+/*오른쪽패널 버튼*/
+.right-pannel-btn {
+    display:inline-block;
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%)
+}
+
+.right-pannel-btn > i {
+    color:#aaa;
+    font-size:20px;
+}
+
+/*상단패널*/
+.top-pannel {
+    position:absolute;
+    top:47px;
+    left:50%;
+    transform:translate(-50%);
+    width:95%;
+    height:32px;
+    background:#f5f5f5;
+    border-radius:3px;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+
+.top-pannel > div {
+    display:inline-block;
+}
+
+/*거래단위*/
+.top-pannel > div:nth-child(1) > div {
+    /*이미지 감싼 div*/
+    width:12px;
+    height:12px;
+    display:inline-block;
+}
+
+.top-pannel > div:nth-child(1) > div > img {
+    width:100%;
+    vertical-align:middle;
+}
+
+.top-pannel > div:nth-child(1) > span {
+    font-size:13px;
+    line-height:30px;
+    margin-left:3px;
+}
+
+/*거래시간*/
+.top-pannel > select {
+    background:#fff;
+    border:1px solid #aaa;
+    width:90px;
+    height:23px;
+    margin-left:30px;
+    font-size:12px;
+    text-indent:5px;
+}
+
+/*거래회차*/
+.top-pannel > div:nth-child(3) {
+    color:#4770d6;
+    font-size:14px;
+    position:absolute;
+    right:20px;
+    top:5px;
+}
+
+/*하단패널*/
+.bottom-pannel {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:auto;
+    background:#fff;
+}
+
+/*직접입력칸*/
+.bottom-pannel > div:nth-child(1) {
+    padding-top:10px;
+    padding-bottom:0;
+}
+
+.bottom-pannel > div:nth-child(1) > input {
+    background:#f5f5f5;
+    border:1px solid #bbb;
+    width:40%;
+    height:30px;
+    color:rgb(26, 204, 26);
+    text-align:center;
+    position:relative;
+    left:16%;
+}
+
+.bottom-pannel > div:nth-child(1) > span {
+    font-size:14px;
+    position:relative;
+    left:19%;
+}
+
+.bottom-pannel > div:nth-child(1) > button {
+    width:30px;
+    height:30px;
+    background:#eee;
+    border:1px solid #ccc;
+    position:relative;
+    left:22%;
+}
+
+.bottom-pannel > div:nth-child(1) > button:active {
+    background:#ccc;
+}
+
+.bottom-pannel .min-max {
+    height:17px;
+    font-size:13px;
+    color:#e72041;
+    position:relative;
+    left:16%;
+    top:3px;
+}
+
+/*숫자 버튼*/
+.bottom-pannel > div:nth-child(3) {
+    float:left;
+    width:70%;
+    padding:7px 5px 10px 10px;
+    box-sizing:border-box;
+}
+
+.bottom-pannel > div:nth-child(3) > button {
+    width:47%;
+    height:33px;
+    margin:3px 2px;
+    border-radius:5px;
+    background:#eee;
+    border:1px solid #ccc;
+}
+
+.bottom-pannel > div:nth-child(3) > button:active {
+    background:#ccc;
+}
+
+/*매도 매수 버튼*/
+.bottom-pannel > div:nth-child(4) {
+    float:left;
+    width:27%;
+    padding:7px 0;
+    box-sizing:border-box;
+}
+
+.bottom-pannel > div:nth-child(4) > button {
+    width:99%;
+    height:52px;
+    color:#ddd;
+    border-radius:5px;
+    margin:3px 0;
+    font-size:13px;
+}
+
+.bottom-pannel > div:nth-child(4) > button > i {
+    color:#ddd;
+    margin-right:7px;
+    font-size:12px;
+}
+
+.bottom-pannel > div:nth-child(4) > button:nth-child(1) {
+    background:#186ac2;
+}
+
+.bottom-pannel > div:nth-child(4) > button:nth-child(1):active {
+    background:#1b3f75;
+}
+
+.bottom-pannel > div:nth-child(4) > button:nth-child(2) {
+    background:#e72041;
+}
+
+.bottom-pannel > div:nth-child(4) > button:nth-child(2):active {
+    background:#582639;
+}
+
+/*배경 차트*/
+section {
+    position:fixed;
+    height:100%;
+    width:100%;
+}
+
+section > img {
+    height:100%;
+}
+
+/*화면 확대축소 버튼*/
+.view-size {
+    position:absolute;
+    bottom:255px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.view-size button {
+    width:23px;
+    height:23px;
+    border-radius:50%;
+    margin: 0 7px;
+    background:#fff;
+    border:1px solid #ddd;
+    box-sizing:border-box;
+}
+
+.view-size button:hover {
+    background:#ddd;
+}
+
+.view-size i {
+    font-size:10px;
+    color:#555;
+    line-height:23px;
+}
+
+/*좌측 네비*/
+.trade-mobile-nav {
+    position:fixed;
+    height:100%;
+    width:260px;
+    background:#f8f8f8;
+    left:-260px;
+    /* left:0; */
+    top:0;
+    z-index:9000;
+    padding:50px 25px;
+    box-sizing:border-box;
+}
+
+.profile-box {
+    padding-top:10px;
+    padding-bottom:30px;
+}
+
+.profile-box > div {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.profile-box > div:nth-child(1) {
+    width:35px;
+    margin-right:15px;
+}
+
+.profile-box > div:nth-child(1) > img {
+    width:100%;
+}
+
+.profile-box > div:nth-child(2) {
+    font-size:12px;
+    height:35px;
+    line-height:35px;
+}
+
+.trade-mobile-nav > ul > li > a {
+    font-size:14px;
+    color:#999;
+    display:block;
+    padding:12px 0;
+}
+
+.trade-mobile-nav > ul > li > a.active {
+    color:#555;
+}
+
+.trade-mobile-nav > ul > li > a > i {
+    margin-right:15px;
+}
+
+.trade-mobile-nav > ul > li:last-child {
+    position:absolute;
+    bottom:40px;
+    left:35px;
+}
+
+.trade-mobile-nav > ul > li:last-child i {
+    font-size:16px;
+}
+
+.nav-close {
+    position:absolute;
+    top:15px;
+    left:20px;
+}
+
+.nav-close > i {
+    color:#aaa;
+}
+
+/*우측 패널*/
+.right-pannel {
+    width:270px;
+    height:100%;
+    background:#eee;
+    position:fixed;
+    top:0;
+    right:-270px;
+    /* right:0; */
+}
+
+/*거래내역*/
+.history-title {
+    text-align:center;
+    padding:15px 0 20px;
+    font-size:13px;
+    position:relative;
+}
+
+.history-title > i {
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.trade-bg {
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:auto;
+}
+
+.trade-list-content {
+    /*각 거래내역*/
+    position:relative;
+    margin:0 7px 7px 7px;
+    background:#fff;
+    padding:8px 12px;
+    border-radius:3px;
+    font-size:13px;
+}
+
+.trade-list-content > div:nth-child(1) > div:nth-child(1) {
+    /*이미지 감싼 div*/
+    display:inline-block;
+    width:15px;
+    margin-right:7px;
+}
+
+.trade-list-content > div:nth-child(1) > div:nth-child(1) > img {
+    width:100%;
+}
+
+.trade-list-content > div:nth-child(1) > span:nth-child(2) {
+    /*종목*/
+    font-size:12px;
+}
+
+.trade-list-content > div:nth-child(1) > span:nth-child(3) {
+    /*시간 종류*/
+    font-size:11px;
+    color:#5d6c8a;
+    position:relative;
+    left:3px;
+}
+
+.trade-list-content > div:nth-child(1) > span:nth-child(4) {
+    /*매도 매수 구분*/
+    position:absolute;
+    top:10px;
+    right:15px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.trade-list-content > div:nth-child(2) {
+    /*시간*/
+    padding:13px 0 2px;
+    color:#5d6c8a;
+    font-size:11px;
+}
+
+.trade-list-content > div:nth-child(3) > span:nth-child(1) {
+    /*배팅금액*/
+    font-size:11px;
+}
+
+i.fa-caret-up {
+    font-size:12px;
+    color:#28ce5a;
+    line-height:20px;
+}
+
+i.fa-caret-down {
+    font-size:12px;
+    color:#ff4a4a;
+    line-height:20px;
+}
+
+.trade-list-result {
+    width:40px;
+    height:20px;
+    border-radius:3px;
+    color:#ddd;
+    text-align:center;
+    font-size:10px;
+    line-height:20px;
+    font-weight:300;
+    position:absolute;
+    bottom:10px;
+    right:15px;
+}
+
+.blue {
+    background:#186ac2;
+}
+
+.red {
+    background:#e72041;
+}
+
+.yellow {
+    background:#f3bb04;
+}
+
+/*트렌드*/
+#trand {
+    display:none;
+}
+
+.trand-title {
+    text-align:center;
+    padding:15px 0 20px;
+    font-size:13px;
+    position:relative;
+}
+
+.trand-title > i {
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#aaa;
+}
+
+.trand-bg {
+    /*회차표 section*/
+    position:relative;
+    text-align:center;
+    font-size:11px;
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:auto;
+}
+
+.trand-bg > div:nth-child(1) {
+    /*계약시간, 종가, 결과*/
+    height:40px;
+    background:#f8f8f8;
+    line-height:40px;
+}
+
+.trand-bg span {
+    display:inline-block;
+}
+
+.trand-bg > div:nth-child(1) > span:nth-child(1) {
+    width:25%;
+}
+
+.trand-bg > div:nth-child(1) > span:nth-child(2) {
+    width:25%;
+}
+
+.trand-bg > div:nth-child(1) > span:nth-child(3) {
+    width:25%;
+}
+
+.trand-bg > div:nth-child(1) > span:nth-child(4) {
+    width:20%;
+}
+
+.trand-bg > .table {
+    overflow:auto;
+    height:100%;
+    background:#f8f8f8;
+}
+
+.trand-bg > .table > div {
+    padding:7px 0;
+    text-align:center;
+}
+
+.trand-bg > .table > div:last-child {
+    margin-bottom:15px;
+}
+
+.trand-bg > .table > div > span:nth-child(1) {
+    width:25%;
+}
+
+.trand-bg > .table > div > span:nth-child(2) {
+    width:25%;
+}
+
+.trand-bg > .table > div > span:nth-child(3) {
+    width:25%;
+}
+
+.trand-bg > .table > div > span:nth-child(4) {
+    width:20%;
+}
+
+.fa-hourglass-half {
+    color:#ffd84f;
+    font-size:10px;
+}
+
+.fa-minus {
+    color:#aaa;
+    font-size:12px;
+}
+
+/*우측패널 탭 버튼*/
+.right-pannel-tab-btn {
+    width:100%;
+    position:absolute;
+    bottom:0;
+    background:#eee;
+}
+
+.right-pannel-tab-btn > li {
+    float:left;
+    width:50%;
+}
+
+.right-pannel-tab-btn > li > a {
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:10px 0 15px;
+}
+
+.right-pannel-tab-btn i {
+    color:#aaa;
+}
+
+.right-pannel-tab-btn i.active {
+    color:#555;
+}
+
+/*교육 창*/
+.education {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.education-header {
+    width:100%;
+    height:45px;
+    background:#fff;
+    position:relative;
+}
+
+.tab-btn > li {
+    float:left;
+    width:50%;
+    text-align:center;
+}
+
+.tab-btn > li > a {
+    display:block;
+    width:100%;
+    padding:12px 0;
+    background:#f8f8f8;
+    color:#999;
+    font-size:13px;
+}
+
+.edu-btn.active {
+    color:#333;
+    background:#eee;
+}
+
+.edu-content {
+    background:#eee;
+    height:auto;
+}
+
+.method-box {
+    width:95%;
+    height:130px;
+    background:#e5e5e5;
+    margin:0 auto 5px;
+    color:#555;
+    text-align:center;
+}
+
+.method-box > span {
+    position:relative;
+    top:40px;
+}
+
+.method-box > div {
+    position:relative;
+    top:50px;
+    font-size:11px;
+    background:#bbb;
+    width:55px;
+    height:25px;
+    line-height:25px;
+    margin:0 auto;
+    border-radius:5px;
+}
+
+.method-popup1 {
+    background:#fff;
+    color:#555;
+    padding:0 30px;
+    position:absolute;
+    top:88px;
+    /* z-index:8900; */
+    height:auto;
+    display:none;
+}
+
+.method-popup1 > span {
+    position:absolute;
+    top:20px;
+    font-size:13px;
+}
+
+.method-popup1 > h3 {
+    text-align:center;
+    padding:20px 0 30px;
+    font-size:14px;
+}
+
+.method-popup1 > h4 {
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+.method-popup1 > p {
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+#education {
+    display:none;
+}
+
+.education-box {
+    float:left;
+    width:46%;
+    height:140px;
+    background:#e5e5e5;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
+.education-box > div:nth-child(1) {
+    width:95%;
+    height:100px;
+    background:#464e72;
+    margin:0 auto;
+    margin-top:5px;
+}
+
+.education-box > div:nth-child(2) {
+    text-align:center;
+    color:#555;
+    font-size:12px;
+    margin-top:8px;
+}
+
+.education-popup {
+    display:none;
+}
+
+.education-popup-content {
+    width:85%;
+    height:200px;
+    background:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:8700;
+}
+
+.popup-close {
+    position:absolute;
+    top:10px;
+    right:20px;
+}
+
+.popup-close > i {
+    color:#aaa;
+}
+
+/*도움말 창*/
+.question {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.question-header {
+    width:100%;
+    height:45px;
+    background:#fff;
+    position:relative;
+}
+
+.question-title {
+    text-align:center;
+    background:#f5f5f5;
+    padding:12px 0;
+    font-size:14px;
+}
+
+.question-content {
+    background:#e5e5e5;
+    padding:20px 30px;
+    color:#555;
+    height:100%;
+    font-size:13px;
+}
+
+/*설정 창*/
+.setting {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+}
+
+.setting-header {
+    width:100%;
+    height:45px;
+    background:#fff;
+    position:relative;
+}
+
+.setting-title {
+    text-align:center;
+    background:#f5f5f5;
+    padding:12px 0;
+    font-size:14px;
+}
+
+.setting-content {
+    background:#f8f8f8;
+    padding:15px;
+    color:#555;
+    height:100%;
+    font-size:13px;
+}
+
+.setting-con {
+    width:100%;
+    height:45px;
+    background:#e5e5e5;
+    margin-bottom:5px;
+    padding:0 20px;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.setting-con > div {
+    display:inline-block;
+    line-height:45px;
+}
+
+.setting-con > div:nth-child(2) {
+    position:absolute;
+    right:20px;
+    font-size:12px;
+}
+
+.setting-btn {
+    color:#666;
+}
+
+.setting-btn.active {
+    color:#3966b2;
+    font-weight:600;
+}
+
+.lang {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+}
+
+.lang-header {
+    width:100%;
+    height:45px;
+    background:#fff;
+    position:relative;
+}
+
+.lang-title {
+    text-align:center;
+    background:#f5f5f5;
+    padding:12px 0;
+    font-size:14px;
+    position:relative;
+}
+
+.lang-title > i {
+    position:absolute;
+    left:30px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.lang-content {
+    background:#f8f8f8;
+    padding:15px;
+    color:#555;
+    height:calc(100% - 89px);
+    font-size:13px;
+}
+
+.lang-con {
+    width:100%;
+    height:45px;
+    background:#e5e5e5;
+    color:#999;
+    margin-bottom:5px;
+    padding:0 20px;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.lang-con > div {
+    vertical-align:middle;
+}
+
+.lang-con > div > div {
+    width:20px;
+    height:20px;
+    display:inline-block;
+    margin-right:10px;
+}
+
+.lang-con > div > div > img {
+    width:100%;
+    vertical-align:middle;
+}
+
+.lang-con > div > span {
+    line-height:45px;
+}
+
+.lang-con > div:nth-child(2) {
+    position:absolute;
+    top:50%;
+    right:30px;
+    transform:translateY(-50%);
+}
+
+.lang-con.active {
+    color:#555;
+}
+
+.lang-con .lang-btn {
+    color:#3966b2;
+    font-weight:600;
+}
+
+#loading {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:#000;
+    z-index:9000;
+    display:none;
+}
+
+#loading > div {
+    width:230px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+#loading > div > img {
+    width:100%;
+}
+
+@media screen and (orientation:landscape) {
+    /*가로모드*/
+    
+    header {
+        width:100%;
+        height:45px;
+        position:relative;
+    }
+    
+    /*상단패널*/
+    .top-pannel {
+        position:absolute;
+        top:47px;
+        left:10px;
+        transform:none;
+        width:calc(100% - 245px);
+    }
+    
+    /*하단패널*/
+    .bottom-pannel {
+        position:fixed;
+        right:0;
+        width:230px;
+        height:calc(100% - 45px);
+    }
+    
+    /*직접입력칸*/
+    .bottom-pannel > div:nth-child(1) {
+        padding-top:40px;
+        padding-bottom:10px;
+    }
+    
+    .bottom-pannel > div:nth-child(1) > input {
+        width:45%;
+        left:15px;
+    }
+    
+    .bottom-pannel > div:nth-child(1) > span {
+        left:20px;
+    }
+    
+    .bottom-pannel > div:nth-child(1) > button {
+        left:35px;
+    }
+
+    .bottom-pannel .min-max {
+        left:0;
+        top:0;
+        margin-left:15px;
+    }
+    
+    /*숫자 버튼*/
+    .bottom-pannel > div:nth-child(3) {
+        width:100%;
+        padding:7px;
+        box-sizing:border-box;
+    }
+    
+    .bottom-pannel > div:nth-child(3) > button {
+        width:47%;
+        height:33px;
+        margin:3px 2px;
+    }
+    
+    /*매도 매수 버튼*/
+    .bottom-pannel > div:nth-child(4) {
+        float:left;
+        width:100%;
+        padding:7px;
+    }
+    
+    .bottom-pannel > div:nth-child(4) > button {
+        width:47%;
+        height:45px;
+        margin:3px 2px;
+        font-size:13px;
+    }
+
+    /*배경 차트*/
+    section {
+        position:fixed;
+        height:100%;
+        width:calc(100% - 230px);
+    }
+    
+    section > img {
+        width:100%;
+    }
+    
+    /*화면 확대축소 버튼*/
+    .view-size {
+        position:absolute;
+        bottom:70px;
+        left:50%;
+        transform:translate(-50%);
+    }
+    
+    /*좌측 네비*/
+    .trade-mobile-nav {
+        position:fixed;
+        height:100%;
+        width:260px;
+        left:-260px;
+        /* left:0; */
+        top:0;
+        z-index:9000;
+        padding:50px 25px;
+    }
+    .profile-box {
+        padding-top:10px;
+        padding-bottom:30px;
+    }
+    
+    .profile-box > div {
+        display:inline-block;
+    }
+    
+    .profile-box > div:nth-child(1) {
+        width:35px;
+        margin-right:15px;
+    }
+    
+    .trade-mobile-nav > ul > li > a {
+        padding:12px 0;
+    }
+ 
+    .trade-mobile-nav > ul > li > a > i {
+        margin-right:15px;
+    }
+    
+    .trade-mobile-nav > ul > li:last-child {
+        position:relative;
+        top:20px;
+        left:0;
+    }
+    
+    .nav-close {
+        position:absolute;
+        top:15px;
+        left:20px;
+    }
+
+    
+    /*교육 창*/ 
+    .education-box {
+        width:48%;
+    }
+    
+}

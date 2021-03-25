@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+body {
+    background:#0E1017;
+}
+
+.register-box {
+    color: #ddd;
+}
+
+.register-box > div:nth-child(2) {
+    padding-bottom:20px;
+}
+
+.register-box > div:nth-child(2) > i {
+    /*메일 아이콘*/
+    font-size:90px;
+}
+
+.register-box > div:nth-child(3) {
+    /*메일 발송 문구*/
+    font-weight:600;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.register-box > div:nth-child(4) {
+    /*메일 확인 문구*/
+    margin:0 auto;
+    width:450px;
+    height:80px;
+    text-align:center;
+    font-size:15px;
+    line-height:25px;
+    font-size:15px;
+}
+
+.register-box > div:nth-child(4) > span {
+    color:#0074bd;
+    font-weight:600;
+}
+
+.register-box > div:nth-child(5) > button {
+    /*홈으로*/
+    margin-bottom:20px;
+}
+
+.register-box > ul:nth-child(7) {
+    /*인증메일 안내*/
+    width:510px;
+    margin:0 auto;
+    text-align:left;
+    font-size:14px;
+    padding:5px 0 30px;
+}
+
+.register-box > ul:nth-child(7) li {
+    margin:7px 0;
+}
+
+.register-box > ul:nth-child(7) button {
+    /*인증메일 재발송*/
+    font-size:12px;
+    width:110px;
+    height:25px;
+    border-radius:5px;
+    line-height:25px;
+    margin-left:10px;
+}
+
+.register-box > ul:nth-child(7) i {
+    margin-left:5px;
+}
+
+/*인증번호 재발송 팝업*/
+.resent-popup {
+    display:none;
+}
+
+.popup-content {
+    position:absolute;
+    top:300px;
+    left:50%;
+    margin-left:-230px;
+    width:450px;
+    height:260px;
+    background:#fff;
+    border-radius:5px;
+    text-align:center;
+    z-index:8700;
+}
+
+.popup-content i {
+    display:block;
+    font-size:70px;
+    padding:40px 0 20px;
+    /* color:#555; */
+    color:#0074bd;
+}
+
+.popup-content div {
+    padding-bottom:30px;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+}
+
+@media screen and (max-width:1000px) {
+
+    .register-box {
+        width:95%;
+        margin:100px auto 50px;
+        height:auto;
+    }
+
+    .register-box > div:nth-child(1) {
+        margin:30px auto 20px;
+    }
+
+    .register-box > div:nth-child(4) {
+        width:80%;
+        height:auto;
+        padding-bottom:30px;
+    }
+
+    .register-box > ul:nth-child(7) {
+        width:90%;
+        padding-bottom:20px;
+    }
+
+    .popup-content {
+        top:50%;
+        width:90%;
+        margin-left:0;
+        transform:translate(-50%,-50%);
+    }
+
+    footer {
+        position:static;
+    }
+
+}

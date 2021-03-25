@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="차세대 암호화폐 옵션 거래 플랫폼, 블랭크 옵션">
+        <meta property="og:image" content="./img/meta-img.png">
+        <title>Blank option</title>
+        <link rel="shorcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/common.css">        
+        <link rel="stylesheet" href="./css/jquery-ui.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/mypageCommon.css">
+        <link rel="stylesheet" href="./css/tradeHistory.css">
+         <!--[if lt IE 9]
+                <script src="./js/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div id="header-left">
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo_night.png" alt="로고">
+                    </a>
+                </div>
+                <button class="trade-btn">거래시작</button>
+            </div>
+            <!--header-left-->
+            <div id="header-right">
+                <div class="dropdown lang-dropdown">
+                    <button class="btn dropdown-toggle lang-dropdown-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                        <img src="./img/kr.png" alt="한국어"><span>KO</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><img src="./img/kr.png" alt="한국어" class="mr-3"><span>KO</span></a>
+                        <a class="dropdown-item" href="#"><img src="./img/gb.png" alt="한국어" class="mr-3"><span>EN</span></a>
+                    </div>
+                </div>
+                <!--언어선택-->
+                <div id="profile">
+                    <button class="profile">
+                        <div><img src="./img/index/profile.png"></div>
+                        <span>Login</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="profile-box">
+                            <div class="account"><a href="./account.html">Account<i class="fas fa-caret-right"></i></a></div>
+                            <div class="wallet">Wallet</div>
+                            <div class="wallet-content">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="./img/btc.svg"></svg>Bitcoin</span>
+                                            <span>150,000,000.55</span>
+                                            <span>BTC</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="./img/usdt.png">US Dollar (Tether)</span>
+                                            <span>150,000.55</span>
+                                            <span>USDt</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="./img/eth.png">Ethereum</span>
+                                            <span>66,150,000.5</span>
+                                            <span>ETH</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="./img/mrn.png">Mercoin</span>
+                                            <span>150,000,000.55</span>
+                                            <span>MRN</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="logout"><a href="./index_logout.html">Logout</a></div>
+                        </div>
+                    <!--profile-box-->
+                </div>
+                <!--profile-->
+                <button class="register-btn" onclick="location.href='./register.html'">회원가입</button>
+                <!--회원가입 버튼-->
+            </div>
+            <!--header-right-->
+        </header>
+        <nav class="account-nav">
+            <ul>
+                <li>
+                    <a href="./account.html" class="nav-menu">
+                        <i class="fas fa-user-circle"></i>개인정보
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="accordion1">
+                        <i class="fas fa-chart-line"></i>자산
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    <div class="accordion1-con">
+                        <a href="./balance.html" class="nav-menu">
+                            <span>종합잔고</span>
+                        </a>
+                        <a href="./tradeHistory.html" class="nav-menu active">
+                            <span>거래내역</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="accordion2">
+                        <i class="fas fa-wallet"></i>지갑
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    <div class="accordion2-con">
+                        <a href="./deposit.html" class="nav-menu">
+                            <span>입금</span>
+                        </a>
+                        <a href="./withdraw.html" class="nav-menu">
+                            <span>출금</span>
+                        </a>
+                        <a href="./transactionHistory.html" class="nav-menu">
+                            <span>입출금내역</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./coupon.html" class="nav-menu">
+                        <i class="fas fa-ticket-alt"></i>쿠폰입력
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./affiliate.html" class="nav-menu">
+                        <i class="fas fa-donate"></i>추천현황
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+        </nav>
+        <section class="mypage-section">
+            <h2 class="mypage-h2">거래내역</h2>
+            <div class="tradeHistory">
+                <div class="period">
+                    <span>기간설정</span>
+                    <button>24시간</button>
+                    <button>3일</button>
+                    <button>7일</button>
+                    <button>1개월</button>
+                    <button>3개월</button>
+                    <button>5개월</button>
+                    <button class="active">전체</button>
+                </div>
+                <div class="date">
+                    <input type="text" class="datepicker" placeholder="Start">
+                    <i class="far fa-calendar-alt"></i>
+                    <input type="text" class="datepicker" placeholder="End">
+                    <i class="far fa-calendar-alt"></i>
+                    <button class="blueBtn">검색</button>
+                </div>                
+                <div class="select mypage-border-bottom mypage-border-top">
+                    <span>자산</span>
+                    <select>
+                        <option>All</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                        <option>option3</option>
+                    </select>
+                    <span>기간</span>
+                    <select>
+                        <option>All</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                        <option>option3</option>
+                    </select>
+                    <span>종류</span>
+                    <select>
+                        <option>All</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                        <option>option3</option>
+                    </select>
+                    <span>결과</span>
+                    <select>
+                        <option>All</option>
+                        <option>option1</option>
+                        <option>option2</option>
+                        <option>option3</option>
+                    </select>
+                    
+                </div>
+                <div class="history">
+                    <div class="history-title mypage-border-bottom">
+                        <div class="trade-time">거래시간</div>
+                        <div class="symbol">자산</div>
+                        <div class="type">종류</div>
+                        <div class="trading">매매구분</div>
+                        <div class="sum">투자금액</div>
+                        <div class="market-price">시가</div>
+                        <div class="closing-price">종가</div>
+                        <div class="evaluated-price">평가금액</div>
+                        <div class="result">결과</div>
+                    </div>
+                    <!--history-title-->
+                    <div class="history-content">
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">1분</div>
+                            <div class="trading"><i class="fas fa-caret-up"></i>매수</div>
+                            <div class="sum">0.55515 BTC</div>
+                            <div class="market-price">1.1135</div>
+                            <div class="closing-price"><i class="fas fa-arrow-up"></i>1.5577</div>
+                            <div class="evaluated-price">0.55515 BTC</div>
+                            <div class="result">-</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">2분</div>
+                            <div class="trading"><i class="fas fa-caret-up"></i>매수</div>
+                            <div class="sum">0.005 BTC</div>
+                            <div class="market-price">1.1135</div>
+                            <div class="closing-price"><i class="fas fa-arrow-up"></i>1.5577</div>
+                            <div class="evaluated-price">0.005 BTC</div>
+                            <div class="result">-</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">5분</div>
+                            <div class="trading"><i class="fas fa-caret-down"></i>매도</div>
+                            <div class="sum">1,567 USDT</div>
+                            <div class="market-price">1.1135</div>
+                            <div class="closing-price"><i class="fas fa-arrow-up"></i>1.5577</div>
+                            <div class="evaluated-price">1,567 USDT</div>
+                            <div class="result revenue">수익</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">1분</div>
+                            <div class="trading"><i class="fas fa-caret-up"></i>매수</div>
+                            <div class="sum">0.6667 ETH</div>
+                            <div class="market-price">6,300</div>
+                            <div class="closing-price"><i class="fas fa-arrow-down"></i>1.5577</div>
+                            <div class="evaluated-price">0.6667 ETH</div>
+                            <div class="result">무효</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">1분</div>
+                            <div class="trading"><i class="fas fa-caret-down"></i>매도</div>
+                            <div class="sum">1.315 ETH</div>
+                            <div class="market-price">6,300</div>
+                            <div class="closing-price"><i class="fas fa-arrow-down"></i>1.5577</div>
+                            <div class="evaluated-price">1.315 ETH</div>
+                            <div class="result">무효</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">1분</div>
+                            <div class="trading"><i class="fas fa-caret-up"></i>매수</div>
+                            <div class="sum">23,456 USDT</div>
+                            <div class="market-price">6,300</div>
+                            <div class="closing-price"><i class="fas fa-arrow-down"></i>1.5577</div>
+                            <div class="evaluated-price">23,456 USDT</div>
+                            <div class="result loss">손실</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">1분</div>
+                            <div class="trading"><i class="fas fa-caret-up"></i>매수</div>
+                            <div class="sum">0.55515 BTC</div>
+                            <div class="market-price">1.1135</div>
+                            <div class="closing-price"><i class="fas fa-arrow-up"></i>1.5577</div>
+                            <div class="evaluated-price">0.55515 BTC</div>
+                            <div class="result">-</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">2분</div>
+                            <div class="trading"><i class="fas fa-caret-up"></i>매수</div>
+                            <div class="sum">0.005 BTC</div>
+                            <div class="market-price">1.1135</div>
+                            <div class="closing-price"><i class="fas fa-arrow-up"></i>1.5577</div>
+                            <div class="evaluated-price">0.005 BTC</div>
+                            <div class="result">-</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">5분</div>
+                            <div class="trading"><i class="fas fa-caret-down"></i>매도</div>
+                            <div class="sum">1,567 USDT</div>
+                            <div class="market-price">1.1135</div>
+                            <div class="closing-price"><i class="fas fa-arrow-up"></i>1.5577</div>
+                            <div class="evaluated-price">1,567 USDT</div>
+                            <div class="result revenue">수익</div>
+                        </div>
+                        <div class="history-content-row mypage-border-bottom">
+                            <div class="trade-time">2018/11/15 21:14</div>
+                            <div class="symbol">EUR/USD</div>
+                            <div class="type">1분</div>
+                            <div class="trading"><i class="fas fa-caret-up"></i>매수</div>
+                            <div class="sum">0.6667 ETH</div>
+                            <div class="market-price">6,300</div>
+                            <div class="closing-price"><i class="fas fa-arrow-down"></i>1.5577</div>
+                            <div class="evaluated-price">0.6667 ETH</div>
+                            <div class="result">무효</div>
+                        </div>
+                    </div>
+                    <!--history-content-->
+                    <div class="mypage-pager">
+                        <div>
+                            <div class="prev-btn">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <a href="#"><i class="fas fa-angle-left"></i></a>
+                            </div>
+                            <div class="page-number">
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </div>
+                            <div class="next-btn">
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pager-->
+                </div>
+             </div>
+        </section>
+
+        <script src="https://kit.fontawesome.com/2f92a2487f.js" crossorigin="anonymous"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/account.js"></script>
+        <script src="./js/tradeHistory.js"></script>
+    </body>
+</html>

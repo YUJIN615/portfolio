@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/*종합잔고 박스*/
+.balance-box {
+    min-width:480px;
+    overflow:auto;
+    max-width:700px;
+    padding: 30px 0;
+}
+
+.balance-title {
+    width:100%;
+    overflow:auto;
+    min-width:390px;
+}
+
+.balance-title > div {
+    display:inline-block;
+    padding:5px 0 10px;
+    font-weight:600;
+    font-size:13px;
+    color: #bbb;
+}
+
+.coin {
+    width:36%;
+    margin-left:10px;
+}
+
+.symbol {
+    width:22%;
+    text-align:center;
+}
+
+.total-balance {
+    width:37%;
+    text-align:right;
+}
+
+/*종합잔고 내역*/
+.balance-content {
+    padding:5px 0 0;
+    font-size:13px;
+    min-width:390px;
+    color: #ccc;
+}
+
+.balance-content-row {
+    width:100%;
+    padding:10px 0;
+}
+
+.balance-content-row > div {
+    display:inline-block;
+    
+}
+
+.balance-content-img {
+    /*이미지 감싼 div*/
+    width:16px;
+    height:16px;
+    display:inline-block;
+    margin-right:10px;
+}
+
+.balance-content-img > img {
+    width:100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .balance {
+        width:100%;
+        height:auto;
+        padding:20px 0px;
+    }
+
+    .balance-content {
+        padding:5px 0 0;
+        font-size:12px;
+    }
+
+    .coin {
+        margin-left:10px;
+    }
+
+}

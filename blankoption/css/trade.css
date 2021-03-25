@@ -1,0 +1,1345 @@
+@charset "utf-8";
+
+.scroll {
+    overflow-y:scroll !important;   
+}
+
+header {
+    width:100%;
+    height:60px;
+    background:#07090e;
+    box-shadow:3px 3px 7px rgba(0,0,0,0.1);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:8500;
+}
+
+#header-left {
+    height:100%;
+    position:relative;
+    top:0;
+    left:20px;
+}
+
+#header-left > div {
+    display:inline-block;
+}
+
+.logo {
+    width:160px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.logo > a {
+    display:block; 
+}
+
+.logo > a > img {
+    width:100%;
+}
+
+.trade-time {
+    position:relative;
+    left:80px;
+    top:3px;
+}
+
+.trade-time > button {
+    width:65px;
+    height:25px;
+    background:#222637;
+    border-radius:3px;
+    border:1px solid #363b53;
+    color:#ccc;
+    font-size:12px;
+    margin-right:7px;
+}
+
+.trade-time > button.active {
+    background:#3c59b1;
+}
+
+.trade-time > button:active {
+    background:#3c59b1;
+}
+
+#header-right {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:20px;
+}
+
+#header-right > div {
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:30px;
+}
+
+.lang-dropdown > button {
+    width:130px;
+}
+
+.lang-dropdown > button > img {
+    width:28px;
+    vertical-align:middle;
+    margin-right:10px;
+}
+
+.lang-dropdown span {
+    font-size:12px;
+    color:#fff;
+}
+
+.lang-dropdown-btn:after {
+    position:relative;
+    top:1px;
+    left:7px;
+    font-size:14px;
+    color:#fff;
+}
+
+.dropdown-menu {
+    background:rgba(7,8,14,1);
+    border:1px solid rgba(44,55,82,1);
+    min-width:50px;
+    width:130px;
+}
+
+.dropdown-menu img {
+    vertical-align:middle;
+    margin-left:5px;
+}
+
+.dropdown-menu a {
+    color:#ccc;
+    font-size:10px;
+    padding: 0.4rem 1.3rem;
+}
+
+.dropdown-menu a:hover {
+    background:rgba(54,77,152,0.6);   
+}
+
+.dropdown-menu a:active {
+    background:rgba(54,77,152,0.9);
+}
+
+.deposite {
+    position:relative;
+    top:0px;
+    margin-right:40px;
+}
+
+.deposite > button {
+    width:120px;
+    height:35px;
+    background:rgba(54,77,152,0.3);
+    border:1px solid rgba(54,77,152,1);
+    border-radius:5px;
+    line-height:35px;
+    font-size:14px;
+}
+
+.deposite > button:hover {
+    background:rgba(54,77,152,0.6);
+}
+
+.deposite > button:active {
+    background:rgba(54,77,152,0.9);
+}
+
+.profile {
+    font-size:14px;
+    color:#fff;
+}
+
+.profile > span {
+    position:relative;
+    top:3px;
+}
+
+.account-button {
+    color:#ccc;
+    margin-right:15px;
+}
+
+.account-button > span:nth-child(1) {
+    font-weight:600;
+    font-size:18px;
+    /* color:#fff; */
+}
+
+.account-button > span:nth-child(2) {
+    font-size:13px;
+    margin:0 5px;
+}
+
+.account-button > i {
+    font-size:12px;
+}
+
+/*profile 클릭하면 나오는 box*/
+.profile-box {
+    position:absolute;
+    top:40px;
+    right:20px;
+    width:420px;
+    /* border:1px solid #ddd; */
+    /* background:#fff; */
+    background:#222637;
+    color:#aaa;
+    border-radius:5px;
+    font-size:14px;
+    display:none;
+}
+
+.account {
+    padding:7px 0;
+    width:100%;
+    /* border-bottom:1px solid #ddd; */
+    border-bottom:1px solid #353b52;
+    text-align:center;
+}
+
+.account > a {
+    display:block;
+    width:100%;
+    color:#ccc;
+}
+
+.account > a > i {
+    margin-left:10px;
+}
+
+.wallet {
+    padding:5px 0;
+    border-bottom:1px solid #353b52;
+    text-align:center;
+}
+
+.wallet-content {
+    padding:10px 0;
+    background:#151926;
+    border-bottom:1px solid #353b52;
+}
+
+.wallet-content li {
+    text-align:left;
+}
+
+.wallet-content li > a {
+    display:block;
+    width:100%;
+    padding:6px 0;
+    color:#aaa;
+    font-size:13px;
+}
+
+.wallet-content li > a > span {
+    display:inline-block;
+}
+
+.wallet-content li > a > span:nth-child(1) {
+    text-align:left;
+    margin-left:25px;
+    width:180px;
+}
+
+.wallet-content img {
+    width:15px;
+    margin-right:10px;
+}
+
+.wallet-content li > a > span:nth-child(2) {
+    text-align:right;
+    width:120px;
+}
+
+.wallet-content li > a > span:nth-child(3) {
+    text-align:right;
+    width:60px;
+}
+
+.wallet-content li > a:hover {
+    background:#1d233a;
+}
+
+.logout {
+    padding:7px 0;
+    border-bottom:0;
+    width:100%;
+    text-align:center;
+}
+
+.logout > a {
+    display:block;
+    width:100%;
+    color:#aaa;
+}
+
+/* .remote {
+    margin-right:15px;
+    font-size:20px;
+    cursor:pointer;
+    color:#666;
+} */
+
+/*left nav*/
+.trade-nav {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:70px;
+    background:#151926;
+    text-align:center;
+    z-index:2000;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.trade-nav ul{
+    position:relative;
+    top:70px;
+    height:100%;
+}
+
+.trade-nav li:last-child{
+    position:absolute;
+    bottom:80px;
+}
+
+.trade-nav li:last-child a {
+    width:70px;
+    padding:25px 0 20px;
+}
+
+.trade-nav a {
+    display:block;
+    padding:25px 0 20px;
+    color:rgba(81,89,123,1);
+    font-size:12px;
+    line-height:26px;
+}
+
+.trade-nav a.active {
+    background:rgba(60,89,177,1);
+    color:#fff;
+}
+
+.trade-nav a:active {
+    background:#3c59b1;
+    color:#eee;
+}
+
+.trade-nav a:hover {
+    /* background:#1d2436; */
+    color:#ccc;
+}
+
+.trade-nav i {
+    font-size:20px;
+}
+
+.trade-list-button {
+    position: relative;
+}
+
+.trade-list-togglebar {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 80%;
+    transform: translateY(-50%);
+    width: 4px;
+    background: #3c59b1;
+    border-radius: 5px;
+}
+
+
+/*거래내역 클릭하면 나오는 패널*/
+.trade-list {
+    position:absolute;
+    top:0;
+    left:-330px;
+    /* left:70px; */
+    width:360px;
+    height:100%;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    background:#151926;
+    color:#ccc;
+    text-align:left;
+    font-size:14px;
+    z-index:1000;
+    overflow:auto;
+}
+
+.trade-list-content {
+    /*각 거래내역*/
+    position:relative;
+    top:70px;
+    margin:0 10px 10px 10px;
+    background:#1f2234;
+    padding:12px 15px;
+    border-radius:3px;
+    font-size:13px;
+}
+
+.trade-list-content > div:nth-child(1) > div:nth-child(1) {
+    /*이미지 감싼 div*/
+    display:inline-block;
+    width:17px;
+    height:17px;
+    margin-right:7px;
+    position:relative;
+    top:-1px;
+}
+
+.trade-list-content > div:nth-child(1) > div:nth-child(1) > img {
+    width:100%;
+}
+
+.trade-list-content > div:nth-child(1) > span:nth-child(2) {
+    /*종목*/
+    font-size:13px;
+}
+
+.trade-list-content > div:nth-child(1) > span:nth-child(3) {
+    /*시간 종류*/
+    font-size:11px;
+    color:#5d6c8a;
+    position:relative;
+    left:5px;
+}
+
+.trade-list-content > div:nth-child(1) > span:nth-child(4) {
+    /*매도 매수 구분*/
+    position:absolute;
+    top:10px;
+    right:15px;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background:#0c0c10;
+    text-align:center;
+}
+
+.trade-list-content > div:nth-child(2) {
+    /*시간*/
+    padding:15px 0 10px;
+    color:#5d6c8a;
+    font-size:13px;
+}
+
+.trade-list-content > div:nth-child(2) img {
+    /*화살표*/
+    width: 13px;
+    margin: 0 3px;
+}
+
+.trade-list-content > div:nth-child(3) > span:nth-child(1) {
+    /*배팅금액*/
+    font-size:13px;
+}
+
+.trade-list-content > div:nth-child(3) img {
+    /*화살표*/
+    width: 13px;
+    margin: 0 3px;
+}
+
+i.fa-caret-up {
+    font-size:14px;
+    color:#28ce5a;
+    vertical-align:bottom;
+}
+
+i.fa-caret-down {
+    font-size:14px;
+    color:#ff4a4a;
+    vertical-align:bottom;
+}
+
+.trade-list-result {
+    width:50px;
+    height:25px;
+    border-radius:3px;
+    color:#ddd;
+    text-align:center;
+    font-size:11px;
+    line-height:23px;
+    font-weight:300;
+    position:absolute;
+    bottom:10px;
+    right:15px;
+}
+
+.blue {
+    background:#18345d;
+    border:1px solid #066cc6;
+}
+
+.red {
+    background:#3c1e38;
+    border:1px solid #be264c;
+}
+
+.yellow {
+    background:#696007;
+    border:1px solid #ffd53e;
+}
+
+.gray {
+    background:#666;
+    border:1px solid #aaa;
+}
+
+/*right-pannel*/
+#right-pannel {
+    width:340px;
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    box-shadow:0px 5px 3px 3px rgba(0,0,0,0.2);
+    background:#151926;
+    z-index:3000;
+}
+
+.right-pannel-1 {
+    /*매도,매수 section*/
+    margin:120px auto 50px;
+    width:285px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.right-pannel-1 > div:nth-child(1) button {
+    width:130px;
+    height:35px;
+    line-height:35px;
+    border-radius:3px;
+    margin:5px;
+    background:rgba(55,61,85,0.3);
+    border:1px solid rgba(55,61,85,1);
+    color:#ccc;
+}
+
+.right-pannel-1 > div:nth-child(1) button:hover {
+    background:rgba(48,54,77,1);
+}
+
+.right-pannel-1 > div:nth-child(1) button:active {
+    background:rgba(70,79,114,1);
+}
+
+.right-pannel-1 > div:nth-child(2) {
+    /*직접 입력*/
+    padding:15px 0 20px;
+}
+ 
+.right-pannel-1 input {
+    width:180px;
+    height:35px;
+    background:rgba(15,18,29,1);
+    border:1px solid rgba(76,86,128,1);
+    margin:10px 5px 10px;
+    text-indent:8px;
+    font-size:13px;
+    font-weight:500;
+    color:#fff;
+    text-align:left;
+}
+
+.right-pannel-1 input:focus {
+    border:1px solid rgba(144,156,208,1);
+}
+
+.right-pannel-1 .min-max {
+    color:#be264c;
+    margin-left:10px;
+}
+
+.right-pannel-1 > div:nth-child(2) span {
+    /*금액단위*/
+    margin:0 10px 0 5px;
+    color:#bbb;
+    font-size:13px;
+}
+
+.right-pannel-1 > div:nth-child(2) > button {
+    width:30px;
+    height:30px;
+    background:rgba(55,61,85,0.3);
+    border:1px solid rgba(55,61,85,1);
+}
+
+.right-pannel-1 > div:nth-child(2) > button > i {
+    color:#ccc;
+}
+
+.right-pannel-1 > div:nth-child(2) > button:hover {
+    background:rgba(55,61,85,0.6);
+}
+
+.right-pannel-1 > div:nth-child(2) > button:active {
+    background:rgba(55,61,85,0.9);
+}
+
+.right-pannel-1 > div:nth-child(3) > button {
+    width:130px;
+    height:35px;
+    line-height:35px;
+    border-radius:3px;
+    margin:5px;
+    color:#ccc;
+}
+
+.right-pannel-1 > div:nth-child(3) > button:nth-child(1) {
+    background:rgba(251,42,90,0.2);
+    border:1px solid rgba(251,42,90,1);
+}
+
+.right-pannel-1 > div:nth-child(3) > button:nth-child(2) {
+    background:rgba(23,137,252,0.2);
+    border:1px solid rgba(23,137,252,1);
+}
+
+.right-pannel-1 > div:nth-child(3) > button:nth-child(1):hover {
+    background:rgba(251,42,90,0.5);
+}
+
+.right-pannel-1 > div:nth-child(3) > button:nth-child(2):hover {
+    background:rgba(23,137,252,0.5);
+}
+
+.right-pannel-1 > div:nth-child(3) > button:nth-child(1):active {
+    background:rgba(251,42,90,0.8);
+}
+
+.right-pannel-1 > div:nth-child(3) > button:nth-child(2):active {
+    background:rgba(23,137,252,0.8);
+}
+
+.right-pannel-1 > div:nth-child(3) i {
+    margin-right:10px;
+}
+
+.right-pannel-2 {
+    /*회차표 section*/
+    text-align:center;
+    font-size:13px;
+    position:fixed;
+    width:340px;
+    height:100%;
+    overflow:auto;
+}
+
+.right-pannel-2 > div:nth-child(1) {
+    /*계약시간, 종가, 결과*/
+    height:40px;
+    background:#151926;
+    line-height:40px;
+    color:#888;
+    position:relative;
+}
+
+.right-pannel-2 span {
+    display:inline-block;
+}
+
+.right-pannel-2 > .table {
+    background:#14141a;
+    color:#aaa;
+    width:100%;
+    height:calc(100% - 480px);
+    position:absolute;
+    overflow:auto;
+}
+
+.right-pannel-2 > div:nth-child(1) > span:nth-child(1) {
+    width:90px;
+}
+
+.right-pannel-2 > div:nth-child(1) > span:nth-child(2) {
+    width:90px;
+}
+
+.right-pannel-2 > div:nth-child(1) > span:nth-child(3) {
+    width:90px;
+}
+
+.right-pannel-2 > div:nth-child(1) > span:nth-child(4) {
+    width:30px;
+}
+
+.right-pannel-2 > .table > div {
+    padding-top:15px;
+    text-align:center;
+}
+
+.right-pannel-2 > .table > div:last-child {
+    margin-bottom:15px;
+}
+
+.right-pannel-2 > .table > div > span:nth-child(1) {
+    width:90px;
+}
+
+.right-pannel-2 > .table > div > span:nth-child(2) {
+    width:90px;
+}
+
+.right-pannel-2 > .table > div > span:nth-child(3) {
+    width:90px;
+}
+
+.right-pannel-2 > .table > div > span:nth-child(4) {
+    width:30px;
+}
+
+.fa-hourglass-half {
+    color:#ffd84f;
+    font-size:10px;
+}
+
+.fa-minus {
+    color:#aaa;
+    font-size:12px;
+}
+
+.remote {
+    width:25px;
+    height:50px;
+    background:#191e2b;
+    box-shadow:-1px 2px 3px rgba(0,0,0,0.2);
+    border-radius:3px 0 0 3px;
+    position:absolute;
+    top:75px;
+    left:-25px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.remote > i {
+    color:#aaa;
+    font-size:12px;
+    line-height:50px;
+}
+
+/*차트 배경*/
+#chart {
+    left:70px;
+    top:60px;
+    left:0;
+    width: calc(100% - 70px);
+    height:calc(100% - 60px);
+    background: #333;
+}
+
+#chart > div:nth-child(1) {
+    /*배경 차트 이미지*/
+    width:100%;
+    /* height:100%; */
+}
+
+#chart > div:nth-child(1) > img {
+    /* width:100%; */
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    right:340px;
+}
+
+#content > div:nth-child(2) {
+    position:absolute;
+    top:20px;
+    left:100px;
+}
+
+.chart-dropdown {
+    position: absolute;
+    top: 80px;
+}
+
+.coin-dropdown {
+    left: 100px;
+}
+
+.time-dropdown {
+    left: 230px;
+}
+
+.chart-dropdown > button {
+    background:#222637;
+    border-radius:3px;
+    border:1px solid #363b53;
+    color:#ccc;
+    width:120px;
+    font-size:13px;
+}
+
+.chart-dropdown .dropdown-menu {
+    width:120px;
+    background:#222637;
+    border:1px solid #363b53;
+    
+}
+
+.chart-dropdown .dropdown-menu > a {
+    color:#ccc;
+    font-size:13px;
+}
+
+.round-box {
+    /*회차, 남은 계약시간*/
+    position:absolute;
+    top:80px;
+    left:37%;
+}
+
+.round-box > div {
+    display:inline-block;
+    width:100px;
+    height:35px;
+    background:#151926;
+    margin-right:5px;
+    text-align:center;
+    line-height:35px;
+    color:#ddd;
+    font-size:14px;
+}
+
+.round-box > div:nth-child(1) {
+    width:130px;
+}
+
+.round-box > div:nth-child(2) i {
+    margin-right:5px;
+}
+
+.scale-box {
+    /*화면 확대축소 버튼*/
+    position:absolute;
+    bottom:40px;
+    left:40%;
+}
+
+.scale-box button {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    margin: 0 5px;
+    background:rgba(55,61,85,0.3);
+    border:1px solid rgba(55,61,85,1);
+    position:relative;
+}
+
+.scale-box button:nth-child(2) {
+    border:1px solid #364D98;
+    background:rgba(54,77,152,0.3);
+}
+
+.scale-box button:nth-child(2) > i {
+    color:#557EFF;
+}
+
+.scale-box button:hover {
+    background:rgba(48,54,77,1);
+}
+
+.scale-box button:active {
+    background:rgba(70,79,114,1);
+}
+
+.scale-box i {
+    font-size:10px;
+    color:#aaa;
+    line-height:25px;
+}
+
+/*임시 버튼*/
+.alert-button {
+    position:absolute;
+    left:120px;
+    bottom:50px;
+}
+
+.alert-button button {
+    width:100px;
+    height:35px;
+    background:#1f2436;
+    color:#ccc;
+    border-radius:5px;
+    margin-bottom:10px;
+    font-size:13px;
+}
+
+/*알림창*/
+.modal-popup {
+    width:380px;
+    height:50px;
+    background:#d32d2d;
+    border-radius:5px;
+    color:#ccc;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+    position:absolute;
+    left:33%;
+    top:30px;
+    display:none;
+}
+
+.modal-popup > p {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:15px;
+    width:100%;
+    text-align:center;
+}
+
+.modal-popup > div {
+    position:absolute;
+    right:10px;
+    top:5px;
+    font-size:12px;
+    cursor:pointer;
+}
+
+.modal-popup2 {
+    float:left;
+    width:300px;
+    height:150px;
+    border-radius:5px;
+    color:#ccc;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+    padding:5px 10px;
+    position:absolute;
+    left:43%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    display:none;
+}
+
+.modal-popup2 > div:nth-child(1) {
+    font-size:15px;
+}
+
+.modal-popup2 > div:nth-child(1) > span {
+    margin-left:5px;
+}
+
+.modal-popup2 > div:nth-child(2) {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:28px;
+    font-weight:600;
+}
+
+.modal-popup2 > div:nth-child(3) {
+    position:absolute;
+    right:10px;
+    top:5px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.modal-green {
+    background:#388E3C;
+}
+
+.modal-red {
+    background:#D1382B;
+}
+
+.result-popup {
+    position:absolute;
+    top:80px;
+    left:370px;
+    width:160px;
+    height:35px;
+    background:#1a1e2e;
+    border:1px solid #1f2d58;
+    border-radius:3px;
+    font-size:14px;
+    padding:0 20px;
+    display:none;
+}
+
+.result-popup > div {
+    color:#ddd;
+    line-height:35px;
+}
+
+.result-popup > span {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:15px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#0f0f1a;
+    text-align:center;
+}
+
+.result-popup > span > i {
+    line-height:20px;
+    font-size:12px;
+}
+
+/*스크롤 디자인*/
+.table::-webkit-scrollbar {
+    width:7px;
+}
+
+.table::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    background-color:#333953;
+}
+
+.table::-webkit-scrollbar-track {
+    background-color:#14141a;
+    width:10px;
+}
+
+.trade-list::-webkit-scrollbar {
+    width:7px;
+}
+
+.trade-list::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    background-color:#333953;
+}
+
+.trade-list::-webkit-scrollbar-track {
+    background-color:#14141a;
+    width:10px;
+}
+
+.education {
+    display:none;
+    position:absolute;
+    top:60px;
+    left:70px;
+    width:calc(100% - 70px);
+    height:calc(100% - 60px);
+    box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    background:#0d0f18;
+    color:#ccc;
+}
+
+.tab-btn > li {
+    float:left;
+}
+
+.tab-btn > li > a {
+    color:#aaa;
+    font-size:15px;
+    display:block;
+    padding:20px 30px;
+    background:#0d0f18;
+}
+
+.tab-btn > li > a:hover {
+    background:#0f121b;
+}
+
+.tab-btn > li > a.active {
+    background:#171b29;
+    color:#ccc;
+}
+
+#method {
+    position:absolute;
+    width:100%;
+    height:calc(100% - 60px);
+    box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    background:#171b29;
+    padding:30px;
+    font-size:15px
+}
+
+.method-box-wrapper {
+    width:1000px;
+}
+
+.method-box {
+    width:300px;
+    height:200px;
+    background:#232637;
+    float:left;
+    margin:10px;
+    animation-name:method-box;
+    animation-delay:.05s;
+    animation-duration:.8s;
+    animation-timing-function:ease;
+    animation-iteration-count:1;
+    animation-fill-mode:backwards;
+}
+
+.method-box:nth-child(2) {
+    animation-delay:.1s;
+}
+
+.method-box:nth-child(3) {
+    animation-delay:.15s;
+}
+
+.method-box:nth-child(4) {
+    animation-delay:.2s;
+}
+
+.method-box:nth-child(5) {
+    animation-delay:.25s;
+}
+
+.method-box:nth-child(6) {
+    animation-delay:.3s;
+}
+
+@keyframes method-box {
+    0%{transform:translateY(50px); opacity:0;}
+    100%{transform:translateY(0px); opacity:1;}
+}
+
+#education {
+    display:none;
+    position:absolute;
+    width:100%;
+    height:calc(100% - 60px);
+    box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    background:#171b29;
+    padding:30px;
+    font-size:15px
+}
+
+.education-box-wrapper {
+    width:1000px;
+}
+
+.education-box {
+    width:300px;
+    height:200px;
+    background:#232637;
+    float:left;
+    margin:10px;
+    animation-name:education-box;
+    animation-delay:.05s;
+    animation-duration:.8s;
+    animation-timing-function:ease;
+    animation-iteration-count:1;
+    animation-fill-mode:backwards;
+}
+
+.education-box:nth-child(2) {
+    animation-delay:.1s;
+}
+
+.education-box:nth-child(3) {
+    animation-delay:.15s;
+}
+
+.education-box:nth-child(4) {
+    animation-delay:.2s;
+}
+
+.education-box:nth-child(5) {
+    animation-delay:.25s;
+}
+
+.education-box:nth-child(6) {
+    animation-delay:.3s;
+}
+
+@keyframes education-box {
+    0%{transform:translateY(50px); opacity:0;}
+    100%{transform:translateY(0px); opacity:1;}
+}
+
+.question {
+    display:none;
+    position:absolute;
+    top:60px;
+    left:70px;
+    width:calc(100% - 70px);
+    height:calc(100% - 65px);
+    box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+    background:#0d0f18;
+    color:#ccc;
+    padding:30px;
+}
+
+.popup-bg {
+    background:rgba(23, 28, 49, 0.6);
+}
+
+
+/*설정 팝업*/
+.setting-popup {
+    display:none;
+}
+
+.setting-popup-content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:8700;
+    width:500px;
+    /* height:350px; */
+    background:#0d111a;
+    color:#aaa;
+    padding:25px 15px;
+    border-radius:5px;
+}
+
+.setting-popup-content > h3 {
+    display:inline-block;
+    font-size:22px;
+    padding:0 0 15px 20px;
+}
+
+.close-btn {
+    cursor:pointer;
+}
+
+.setting-popup-content > span {
+    position:absolute;
+    right:30px;
+    font-size:20px;
+}
+
+.setting-popup-content > div {
+    background:#151925;
+    padding:12px 25px;
+    margin:5px 0;
+    position:relative;
+    cursor:pointer;
+}
+
+.setting-popup-content > div > div {
+    /* padding:7px 0; */
+    display:inline-block;
+}
+
+.setting-popup-content > div > div:nth-child(2) {
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:14px;
+    text-align:center;
+    width:40px;
+}
+
+.setting-btn {
+    color:#666;
+}
+
+.setting-btn.active {
+    color:#3966b2;
+    font-weight:600;
+}
+
+/*언어선택 팝업*/
+.lang-popup {
+    display:none;
+}
+
+.lang-popup-content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:8700;
+    width:500px;
+    /* height:350px; */
+    background:#0d111a;
+    color:#aaa;
+    padding:25px 15px;
+    border-radius:5px;
+}
+
+.lang-popup-content > h3 {
+    display:inline-block;
+    font-size:22px;
+    padding:0 0 15px 20px;
+}
+
+.close-btn {
+    cursor:pointer;
+}
+
+.lang-popup-content > span {
+    position:absolute;
+    right:30px;
+    font-size:20px;
+}
+
+.lang-popup-content > div {
+    background:#151925;
+    padding:12px 25px;
+    margin:5px 0;
+    position:relative;
+    cursor:pointer;
+}
+
+.lang-popup-content > div > div {
+    display:inline-block;
+}
+
+.lang-popup-content > div > div > div {
+    /*이미지 감싼 div*/
+    display:inline-block;
+    width:20px;
+    margin-right:10px;
+}
+
+.lang-popup-content > div > div > div > img {
+    width:100%;
+}
+
+.lang-popup-content > div > div:nth-child(2) {
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:14px;
+    cursor:pointer;
+    text-align:center;
+    width:40px;
+}
+
+.lang-btn.active {
+    color:#3966b2;
+    font-weight:600;
+}
+
+#loading {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:60px;
+    left:0;
+    background:#000;
+    z-index:9000;
+    display:none;
+}
+
+#loading > div {
+    width:320px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+#loading > div > img {
+    width:100%;
+}
