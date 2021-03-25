@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+.transaction-box {
+    min-width:557px;
+    width:770px;
+    height:auto;
+    padding:30px 0px;
+    box-sizing:border-box;
+    margin-bottom:20px;
+    box-sizing:border-box;
+}
+
+.transaction-dropdown {
+    padding-bottom:30px;
+    width:240px;
+}
+
+.transaction-btn {
+    width:100%;
+    text-align:left;
+    color:#ddd;
+    position:relative;
+    font-size:13px;
+}
+
+.transaction-btn:hover {
+    color:#ddd;
+}
+
+.transaction-btn::after {
+    position:absolute;
+    right:20px;
+    top:15px;
+}
+
+.transaction-dropdown-menu {
+    width:100%;
+}
+
+.transaction-dropdown-menu a {
+    font-size:14px;
+}
+
+.transaction-title {
+    padding:5px 0;
+    min-width:500px;
+}
+
+.transaction-title > div {
+    display:inline-block;
+    font-size:13px;
+    font-weight:600;
+    color: #ddd;
+}
+
+.transaction-content {
+    padding-bottom:20px;
+    height:400px;
+    margin-bottom:20px;
+    min-width:500px;
+    color: #bbb;
+    font-weight: 400;
+}
+
+.transaction-content-row > div {
+    display:inline-block;
+    font-size:12px;
+    padding:7px 0;
+}
+
+.time {
+    width:26%;
+}
+
+.transaction-kind {
+    width:17%;
+}
+
+.price {
+    width:20%;
+}
+
+.symbol {
+    width:15%;
+}
+
+.result {
+    width:19%;
+}
+
+.deposite {
+    color:#0074bd;
+}
+
+.withdraw {
+    color:#fa4343;
+}
+
+/*스크롤 디자인*/
+.transaction-content::-webkit-scrollbar {
+    width:8px;
+}
+
+.transaction-content::-webkit-scrollbar-thumb {
+    background-color:#bbb;
+}
+
+.transaction-content::-webkit-scrollbar-track {
+    background-color:#ddd;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .transaction-box {
+        margin:0 auto 20px;
+        padding:10px 0px;
+    }
+
+}

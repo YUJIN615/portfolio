@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="차세대 암호화폐 옵션 거래 플랫폼, 블랭크 옵션">
+        <meta property="og:image" content="./img/meta-img.png">
+        <title>Blank option</title>
+        <link rel="shorcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/trade.css">
+        <link rel="stylesheet" href="./css/iziModal.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        
+    </head>
+    <body>
+        <header>
+            <div id="header-left">
+                <div class="logo"><a href="./index.html"><img src="./img/logo_night.png" alt="로고"></a></div>
+                <!-- <div class="trade-time">
+                    <button class="active">1분 거래</button>
+                    <button>2분 거래</button>
+                    <button>5분 거래</button>
+                </div> -->
+            </div>
+            <!--header-left-->
+            <div id="header-right">
+                <div class="dropdown lang-dropdown">
+                    <button class="btn dropdown-toggle lang-dropdown-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./img/kor.png" alt="한국어" class="mr-2"><span>KOR</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><img src="./img/kor.png" alt="한국어" class="mr-3"><span>KOR</span></a>
+                        <a class="dropdown-item" href="#"><img src="./img/usa.png" alt="영어" class="mr-3"><span>USA</span></a>
+                    </div>
+                </div>
+                <div class="deposite">
+                    <button class="text-white">입금하기</button>
+                </div>
+                <div>
+                    <button class="profile"><img src="./img/profile.png" class="mr-3"><span>아이디</span></button>
+                </div>              
+                <div>
+                    <button class="account-button">
+                        <span>123,456,789.901</span>
+                        <span>USDT</span>
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="profile-box">
+                        <div class="account"><a href="./account.html">Account<i class="fas fa-caret-right"></i></a></div>
+                        <div class="wallet">Wallet</div>
+                        <div class="wallet-content">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="./img/btc.svg"></svg>Bitcoin</span>
+                                        <span>150,000,000.55</span>
+                                        <span>BTC</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="./img/usdt.png">US Dollar (Tether)</span>
+                                        <span>150,000.55</span>
+                                        <span>USDt</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="./img/eth.png">Ethereum</span>
+                                        <span>66,150,000.5</span>
+                                        <span>ETH</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img src="./img/mrn.png">Mercoin</span>
+                                        <span>150,000,000.55</span>
+                                        <span>MRN</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logout"><a href="./index_logout.html">Logout</a></div>
+                    </div><!--profile-box-->
+                </div>                
+            </div>
+            <!--header-right-->
+        </header>
+        <nav class="trade-nav">
+            <ul>
+                <li class="nav-chart">
+                    <a href="#content" class="active"><i class="fas fa-chart-line"></i><br>거래차트</a>
+                </li>
+                <li class="trade-list-button">
+                    <a href="#"><i class="far fa-clock"></i><br>거래내역</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="./deposit.html"><i class="fas fa-wallet"></i><br>입출금</a>
+                </li>
+                <li class="nav-education">
+                    <a href="#"><i class="far fa-file-alt"></i><br>교육</a>
+                </li>
+                <li class="nav-question">
+                    <a href="#"><i class="far fa-question-circle"></i><br>도움말</a></li>
+                <li class="nav-setting">
+                    <a href="#"><i class="fas fa-cog"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="trade-list">
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result red">손실</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result yellow">진행중</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result gray">비김</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-down"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-down"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result red">손실</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-down"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result yellow">진행중</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+            <div class="trade-list-content">
+                <div>
+                    <div><img src="./img/btc.svg"></div>
+                    <span>BTC/USD</span>
+                    <span>1분</span>
+                    <span><i class="fas fa-caret-up"></i></span>                 
+                </div>
+                <div>
+                    <span>10933.15(20:28:00) → 10931.99(20:28:13)</span>                
+                </div>
+                <div>
+                    <span>0.01BTC → 0BTC</span>
+                    <span class="trade-list-result blue">수익</span>
+                </div>
+            </div>
+        </div>
+        <div id="right-pannel">
+            <div class="right-pannel-1">
+                <div>
+                    <button>+1</button>
+                    <button>+5</button>
+                    <button>+10</button>
+                    <button>+50</button>
+                    <button>+100</button>
+                    <button>MAX</button>
+                </div>
+                <div>
+                    <input type="text"><span>USDT</span>
+                    <button><i class="fas fa-undo-alt"></i></button>
+                    <div class="min-max">100 - 10000</div>
+                </div>
+                <div>
+                    <button><i class="fas fa-chevron-down"></i>매도</button>
+                    <button><i class="fas fa-chevron-up"></i>매수</button>
+                </div>
+            </div>
+            <!--매도매수-->
+            <div class="right-pannel-2">
+                <div>
+                    <span>계약시간</span>
+                    <span>시작가격</span>
+                    <span>종료가격</span>
+                    <span>결과</span>
+                </div>
+                <div class="table scroll">
+                    <div>
+                        <span>23:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>23:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-down"></i></span>
+                    </div>
+                    <div>
+                        <span>23:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-down"></i></span>
+                    </div>
+                    <div>
+                        <span>23:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>22:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-hourglass-half"></i></span>
+                    </div>
+                    <div>
+                        <span>22:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>22:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div>
+                        <span>22:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-down"></i></span>
+                    </div>
+                    <div>
+                        <span>21:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>21:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>21:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>21:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div>
+                        <span>20:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>20:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-hourglass-half"></i></span>
+                    </div>
+                    <div>
+                        <span>20:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>20:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>20:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>19:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div>
+                        <span>19:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                    <div>
+                        <span>19:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-hourglass-half"></i></span>
+                    </div>
+                    <div>
+                        <span>18:09:00</span>
+                        <span>6666.11</span>
+                        <span>9012.96</span>
+                        <span><i class="fas fa-caret-up"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!--회차표-->
+            <div class="remote">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+
+        <section id="chart">
+            <div>
+                <img src="./img/bg_night2.png" alt="chart" class="chart-bg">
+            </div>
+        </section>
+        <!--chart-->
+
+        <div class="dropdown chart-dropdown coin-dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                BTC/USD
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">BTC/USD</a>
+            </div>
+        </div>
+        <!--종목선택-->
+
+        <div class="dropdown chart-dropdown time-dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                1분 거래
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">1분 거래</a>
+                <a class="dropdown-item" href="#">2분 거래</a>
+                <a class="dropdown-item" href="#">5분 거래</a>
+            </div>
+        </div>
+        <!--거래시간 선택-->
+
+        <div class="round-box">
+            <div>
+                제 851회차
+            </div>
+            <div>
+                <i class="fas fa-stopwatch"></i><span>00:46</span>
+            </div>                
+        </div>
+        <!--회차-->
+
+        <div class="scale-box">
+            <button><i class="fas fa-minus"></i></button>
+            <button><i class="fas fa-redo"></i></button>
+            <button><i class="fas fa-plus"></i></button>
+        </div>
+        <!--화면 확대축소-->
+
+        <div class="alert-button">
+            <button href="#alert-btn1" id="alert-btn1">알림창1</button><br>
+            <button href="#alert-btn2" id="alert-btn2">알림창2</button><br>
+            <button href="#alert-btn3" id="alert-btn3">알림창3</button><br>
+            <button href="#alert-btn4" id="alert-btn4">알림창4</button><br>
+            <button href="#alert-btn9" id="alert-btn9">결과 알림창</button><br>
+            <button href="#alert-btn5" id="alert-btn5">매수</button><br>
+            <button href="#alert-btn6" id="alert-btn6">매도</button><br>
+            <button href="#alert-btn7" id="alert-btn7">수익</button><br>
+            <button href="#alert-btn8" id="alert-btn8">손실</button><br>
+        </div>
+        <div class="modal-popup2 modal-green" id="alert-popup5">
+            <div>2020-05-07 <span>15:33</span></div>
+            <div>매수</div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="modal-popup2 modal-red" id="alert-popup6">
+            <div>2020-05-07 <span>15:33</span></div>
+            <div>매도</div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="modal-popup2 modal-green" id="alert-popup7">
+            <div>2020-05-07 <span>15:33</span></div>
+            <div>수익</div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="modal-popup2 modal-red" id="alert-popup8">
+            <div>2020-05-07 <span>15:33</span></div>
+            <div>손실</div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="result-popup" id="alert-popup9">
+            <div>0.123BTC</div>
+            <span><i class="fas fa-caret-up"></i></span>
+        </div>
+
+        <section class="education nav-content">
+            <ul class="tab-btn clearfix">
+                <li><a href="#method" class="edu-btn active">이용방법</a></li>
+                <li><a href="#education" class="edu-btn">교육</a></li>
+            </ul>
+            <div id="method" class="edu-content clearfix">
+                이용방법 탭입니다.
+                <div class="method-box-wrapper">
+                    <div class="method-box"></div>
+                    <div class="method-box"></div>
+                    <div class="method-box"></div>
+                    <div class="method-box"></div>
+                    <div class="method-box"></div>
+                    <div class="method-box"></div>
+                </div>
+            </div>
+            <div id="education" class="edu-content">
+                교육 탭입니다.
+                <div class="education-box-wrapper">
+                    <div class="education-box"></div>
+                    <div class="education-box"></div>
+                    <div class="education-box"></div>
+                    <div class="education-box"></div>
+                    <div class="education-box"></div>
+                    <div class="education-box"></div>
+                </div>
+            </div>
+        </section>
+        <section class="question nav-content">
+            도움말 탭입니다.
+        </section>
+
+        <div class="setting-popup">
+            <div class="popup-bg"></div>
+            <div class="setting-popup-content">
+                    <h3>설정</h3>
+                    <span class="close-btn"><i class="fas fa-times"></i></span>
+                <div class="setting-con">
+                    <div>거래 확인 대화 상자 보기</div>
+                    <div class="setting-btn">OFF</div>
+                </div>
+                <div class="setting-con">
+                    <div>거래 결과 대화 상자 보기</div>
+                    <div class="setting-btn">OFF</div>
+                </div>
+                <div class="setting-con">
+                    <div>사운드</div>
+                    <div class="setting-btn active">ON</div>
+                </div>
+                <div class="lang-select">
+                    <div>언어 선택</div>
+                    <div><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lang-popup">
+            <div class="popup-bg"></div>
+            <div class="lang-popup-content">
+                <h3>언어 선택</h3>
+                <span class="close-btn"><i class="fas fa-times"></i></span>
+                <div class="lang-con">
+                    <div>
+                        <div><img src="./img/kr.png"></div>
+                        <span>대한민국, KOR</span>
+                    </div>
+                    <div class="lang-btn active">선택</div>
+                </div>
+                <div class="lang-con">
+                    <div>
+                        <div><img src="./img/gb.png"></div>
+                        <span>영국, EN</span>
+                    </div>
+                    <div class="lang-btn"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading">
+            <div>
+                <img src="./img/blankOption-sameAsVideo.svg">
+            </div>
+        </div>
+        <!--로딩 팝업-->
+    
+
+        <script src="https://kit.fontawesome.com/2f92a2487f.js" crossorigin="anonymous"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/iziModal.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/trade.js"></script>
+        
+        
+    </body>
+</html>

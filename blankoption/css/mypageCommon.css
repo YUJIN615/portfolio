@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+body {
+    background:#0E1017; 
+}
+
+/*모바일 메뉴*/
+.mobile-menu {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.mobile-menu > i {
+    font-size: 20px;
+    color: #3b4a87;
+}
+
+/*네비게이션*/
+.account-nav > .close-btn > i {
+    color:#fff;
+    font-size:13px;
+}
+
+.account-nav {
+    position:fixed;
+    top:0;
+    left:0;
+    width:250px;
+    height:100%;
+    z-index:8000;
+    background:#151926;
+    overflow:auto;
+}
+
+.account-nav > ul {
+    position:relative;
+    top:60px;
+    left:0;
+}
+
+.account-nav > ul > li a {
+    color:#51597B;
+    display:block;
+    padding:15px 0 15px 20px;
+    width:100%;
+    font-size: 14px;
+    position: relative;
+}
+
+.account-nav ul a:hover {
+    background: #263464;
+    color: #ccc;
+}
+
+.nav-menu.active {
+    background: #3C59B1;
+    color: #fff;
+}
+
+.account-nav ul i:nth-of-type(1) {
+    margin-right:15px;
+}
+
+.account-nav ul i:nth-of-type(2) {
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.account-nav > ul > li > div > a > span {
+    margin-left:30px;
+}
+
+.account-nav > .close-btn {
+    position:absolute;
+    top:10px;
+    left:20px;
+}
+
+/*네비게이션 - 아코디언 메뉴*/
+.accordion1-con {
+    overflow:hidden;
+    font-size:14px;
+}
+
+.accordion2-con {
+    overflow:hidden;
+    font-size:14px;
+}
+
+/*섹션*/
+section {
+    width:calc( 100% - 250px );
+    left:250px;
+}
+
+/*박스 내 공통*/
+.mypage-section {
+    position:relative;
+    top:65px;
+    overflow:auto;
+    padding:30px 60px;
+}
+
+.mypage-h2 {
+    color: #eee;
+    font-size: 20px;
+}
+
+.mypage-h3 {
+    height:40px;
+    color: #eee;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mypage-input {
+    height: 32px;
+    background: #0F121D;
+    border: 1px solid #4C5680;
+    border-radius: 3px;
+    color: #ddd;
+    font-size: 13px;
+    text-indent: 10px;
+}
+
+.mypage-border-bottom {
+    border-bottom: 1px solid #4C5680;
+}
+
+.mypage-border-top {
+    border-top: 1px solid #4C5680;
+}
+
+/*버튼 공통*/
+.blueBtn {
+    width: 120px;
+    height: 32px;
+    background: rgba(23,137,252,0.2);
+    border: 1px solid #1789FC;
+    border-radius: 3px;
+    color: #eee;
+    font-size: 13px;
+}
+
+.blueBtn:hover {
+    background: rgba(23,137,252,0.5);
+    border: 1px solid #1789FC;
+}
+
+.blueBtn:active {
+    background: rgba(23,137,252,0.8);
+    border: 1px solid #1789FC;
+}
+
+.grayBtn {
+    width: 120px;
+    height: 32px;
+    background: rgba(55,61,85,0.3);
+    border: 1px solid #373D55;
+    border-radius: 3px;
+    color: #eee;
+    font-size: 13px;
+}
+
+.grayBtn:hover {
+    background: rgba(55,61,85,0.5);
+    border: 1px solid #373D55;
+}
+
+.grayBtn:active {
+    background: rgba(55,61,85,0.8);
+    border: 1px solid #373D55;
+}
+
+.cloneBtn {
+    width: 87px;
+    height: 32px;
+    background: rgba(55,61,85,0.3);
+    border: 1px solid #373D55;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+}
+
+/*에러 메세지*/
+.error-message {
+    text-align: left;
+    margin-top: 4px;
+    font-size: 10px;
+    color: #D1382B;
+    height: 20px;
+}
+
+/*페이저*/
+.mypage-pager {
+    text-align:center;
+    padding:10px 0 30px;
+}
+
+.mypage-pager > div {
+    display:inline-block;
+}
+
+.mypage-pager > div > div {
+    /*버튼 박스 공통*/
+    display:inline-block;
+    font-size:12px;
+}
+
+.mypage-pager a {
+    /*버튼 a태그 공통*/
+    display:inline-block;
+    padding:6px;
+    color:#999;
+}
+
+.mypage-pager i {
+    color:#999;
+}
+
+.mypage-pager > .page-number > div {
+    display:inline-block;
+}
+
+.mypage-pager a.active {
+    color:#fff;
+    font-weight:600;
+}
+
+@media screen and (max-width: 1000px) {
+    /*헤더*/
+    .mobile-menu {
+        display:inline-block!important;
+    }
+    
+    .logo {
+        display:none!important;
+    }
+    
+    .lang-dropdown {
+        left:0px;
+        top:-2px;
+    }
+    
+    #gnb {
+        display:none!important;
+    }
+    
+    #header-right > div {
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+    .profile {
+        margin-right:0px;
+    }
+
+    /*네비게이션*/
+    .account-nav {
+        left:-250px;
+        z-index:8600;
+    }
+
+    .account-nav > ul {
+        top:50px;
+    }
+
+    .account-nav ul a {
+        font-size:14px;
+        padding:7px 0 7px 30px;
+    }
+
+    /*section*/
+    .mypage-section {
+        left:0;
+        width:100%!important;
+        padding:0 20px;
+    }
+
+    .mypage-input {
+        width: 100%!important;
+    }
+
+    .mypage-section > h2 {
+        height:35px;
+    }
+
+    .mypage-box > h3 {
+        height:30px;
+    }
+    
+}

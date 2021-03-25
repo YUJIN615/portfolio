@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+.deposit-box {
+    position:relative;
+    padding: 30px 0;
+    width: 540px;
+}
+
+.deposit-dropdown {
+    padding-bottom:20px;
+}
+
+.deposit-btn {
+    border: 1px solid #909CD0;
+    width:100%;
+    text-align:left;
+    color:#ddd;
+    position:relative;
+    font-size:14px;
+}
+
+.deposit-btn:hover {
+    color:#ddd;
+}
+
+.deposit-btn::after {
+    position:absolute;
+    right:20px;
+    top:15px;
+}
+
+.deposit-dropdown-menu {
+    width:100%;
+}
+
+.money {
+    padding:10px 0;
+}
+
+.money-content {
+    font-size:14px;
+    color: #bbb;
+}
+
+.money-content > div {
+    display:inline-block;
+    padding:13px 0;
+}
+
+.money-content > div:nth-child(1) {
+    width:60%;
+    margin-left:10px
+}
+
+.money-content > div:nth-child(2) {
+    width:20%;
+    color: #fff;
+}
+
+.money-content > div:nth-child(3) {
+    width:13%;
+    text-align: right;
+}
+
+.message {
+    font-size:14px;
+    padding-bottom:25px;
+    color:#ddd;
+}
+
+.deposit-adress-content {
+    padding:5px 0 10px;
+    font-size:15px;
+    color: #bbb;
+}
+
+.deposit-adress-content > div {
+    padding-bottom:10px;
+}
+
+.deposit-adress-content1 {
+    position:relative;
+}
+
+.deposit-adress-content1 > input {
+    width: 453px;
+}
+
+.cloneBtn {
+    position:absolute;
+    right:0;
+}
+
+.deposit-adress-content2 > input {
+    width: 538px;
+}
+
+.apply {
+    padding-top:30px;
+    text-align:center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .deposit-box {
+        width:100%;
+        margin:0 auto 20px;
+        padding:10px 0px;
+    }
+
+    .money-content > div:nth-child(1) {
+        margin-left:0px
+    }
+
+}

@@ -1,0 +1,24 @@
+<svg id="그룹_14" data-name="그룹 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.683" height="20.982" viewBox="0 0 19.683 20.982">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.296" y1="-0.06" x2="0.552" y2="0.928" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0f6e8a"/>
+      <stop offset="1" stop-color="#7df0e3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.077" y1="0.161" x2="0.917" y2="0.865" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#30c4bd"/>
+      <stop offset="1" stop-color="#dbff99"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="1.051" x2="0.5" y2="-0.046" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc478"/>
+      <stop offset="1" stop-color="#ff8f61"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.109" y1="1.176" x2="0.905" y2="0.115" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#78339c"/>
+      <stop offset="1" stop-color="#eb2e38"/>
+    </linearGradient>
+  </defs>
+  <path id="패스_287" data-name="패스 287" d="M0,10.491V1A1.017,1.017,0,0,1,.93,0a1.584,1.584,0,0,1,.854.239L19.125,9.751a.9.9,0,0,1,.557.74.894.894,0,0,1-.557.74L1.784,20.743a1.59,1.59,0,0,1-.854.238,1.016,1.016,0,0,1-.93-1V10.491Z" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  <path id="패스_288" data-name="패스 288" d="M18.759,10.553,8.26.019A.732.732,0,0,1,8.423,0a1.584,1.584,0,0,1,.854.239L22.053,7.246Z" transform="translate(-7.494 0)" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+  <path id="패스_289" data-name="패스 289" d="M124.635,84.381l-3.215-3.226,3.295-3.306,4.565,2.5a.77.77,0,0,1,0,1.48Z" transform="translate(-110.154 -70.603)" fill-rule="evenodd" fill="url(#linear-gradient-3)"/>
+  <path id="패스_290" data-name="패스 290" d="M9.41,123.787l.009-.009L19.8,113.36l3.215,3.226-12.7,6.964a1.59,1.59,0,0,1-.854.238Z" transform="translate(-8.537 -102.807)" fill-rule="evenodd" fill="url(#linear-gradient-4)"/>
+</svg>

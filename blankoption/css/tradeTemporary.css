@@ -1,0 +1,25 @@
+body {
+    background:#000;
+}
+
+.temporary {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.temporary-img {
+    width:300px;
+    margin-bottom:10px;
+}
+
+.temporary-img > img {
+    width:100%;
+}
+
+.temporary-text {
+    color:#fff;
+    font-size:16px;
+}

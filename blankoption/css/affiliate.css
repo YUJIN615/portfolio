@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+.affiliate {
+    width:530px;
+    position:relative;
+    background:#0E1017;
+    padding: 30px 0;
+}
+
+.affiliate-input-box {
+    position:relative;
+}
+
+.affiliate input {
+    width: 440px;
+}
+
+.cloneBtn {
+    position:absolute;
+    right:0;
+}
+
+/*내 인센티브*/
+.incentive {
+    display:none;
+}
+
+.affiliate-dropdown {
+    padding-bottom:30px;
+}
+
+.affiliate-btn {
+    border:1px solid #ddd;
+    width:100%;
+    text-align:left;
+    position:relative;
+    font-size:14px;
+}
+
+.affiliate-btn::after {
+    position:absolute;
+    right:20px;
+    top:15px;
+}
+
+.affiliate-dropdown-menu {
+    width:100%;
+}
+
+.incentive-table {
+    width:100%;
+    padding-bottom:10px;
+}
+
+.incentive-table > div:first-child {
+    border-top:2px solid #ddd;
+}
+
+.incentive-table > div {
+    border-bottom:1px solid #ddd;
+}
+
+.incentive-table > div > div {
+    display:inline-block;
+    padding:5px 0;
+}
+
+.incentive-title {
+    font-size:15px;
+    background:#eee;
+    line-height:18px;
+}
+
+.incentive-content {
+    font-size:14px;
+    line-height:30px;
+}
+
+.col-title {
+    width:33%;
+    margin-left:5px;
+}
+
+.row-title > span {
+    font-size:13px;
+}
+
+.yesterday {
+    width:33%;
+}
+
+.today {
+    width:30%;
+}
+
+/*내 회원*/
+.member-box {
+    margin-bottom:0;
+    display:none;
+}
+
+.member > div {
+    display:inline-block;
+    width:49%;
+    text-align:center;
+    font-size:14px;
+}
+
+.member > div > div {
+    padding:5px 0;
+}
+
+.member > div > div:nth-child(1) {
+    background:#eee;
+    border-bottom:1px solid #ddd;
+    border-top:2px solid #ddd;
+}
+
+.member > div > div:nth-child(2) {
+    border-bottom:1px solid #ddd;
+}
+
+.member > div > div:nth-child(2) > span {
+    font-weight:600;
+    margin-right:5px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .affiliate {
+        width: 100%;
+    }
+    
+    .incentive-title {
+        font-size:13px;
+    }
+
+    .incentive-content {
+        font-size:13px;
+    }
+
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="차세대 암호화폐 옵션 거래 플랫폼, 블랭크 옵션">
+        <meta property="og:image" content="./img/meta-img.png">
+        <title>Blank option</title>
+        <link rel="shorcut icon" href="favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/common.css">        
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/mypageCommon.css">
+        <link rel="stylesheet" href="./css/affiliate.css">
+         <!--[if lt IE 9]
+                <script src="./js/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div id="header-left">
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo_night.png" alt="로고">
+                    </a>
+                </div>
+                <button class="trade-btn">거래시작</button>
+            </div>
+            <!--header-left-->
+            <div id="header-right">
+                <div class="dropdown lang-dropdown">
+                    <button class="btn dropdown-toggle lang-dropdown-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                        <img src="./img/kr.png" alt="한국어"><span>KO</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><img src="./img/kr.png" alt="한국어" class="mr-3"><span>KO</span></a>
+                        <a class="dropdown-item" href="#"><img src="./img/gb.png" alt="한국어" class="mr-3"><span>EN</span></a>
+                    </div>
+                </div>
+                <!--언어선택-->
+                <div id="profile">
+                    <button class="profile">
+                        <div><img src="./img/index/profile.png"></div>
+                        <span>Login</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="profile-box">
+                            <div class="account"><a href="./account.html">Account<i class="fas fa-caret-right"></i></a></div>
+                            <div class="wallet">Wallet</div>
+                            <div class="wallet-content">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="./img/btc.svg"></svg>Bitcoin</span>
+                                            <span>150,000,000.55</span>
+                                            <span>BTC</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="./img/usdt.png">US Dollar (Tether)</span>
+                                            <span>150,000.55</span>
+                                            <span>USDt</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="./img/eth.png">Ethereum</span>
+                                            <span>66,150,000.5</span>
+                                            <span>ETH</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="./img/mrn.png">Mercoin</span>
+                                            <span>150,000,000.55</span>
+                                            <span>MRN</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="logout"><a href="./index_logout.html">Logout</a></div>
+                        </div>
+                    <!--profile-box-->
+                </div>
+                <!--profile-->
+                <button class="register-btn" onclick="location.href='./register.html'">회원가입</button>
+                <!--회원가입 버튼-->
+            </div>
+            <!--header-right-->
+        </header>
+        <nav class="account-nav">
+            <ul>
+                <li>
+                    <a href="./account.html" class="nav-menu">
+                        <i class="fas fa-user-circle"></i>개인정보
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="accordion1">
+                        <i class="fas fa-chart-line"></i>자산
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    <div class="accordion1-con">
+                        <a href="./balance.html" class="nav-menu">
+                            <span>종합잔고</span>
+                        </a>
+                        <a href="./tradeHistory.html" class="nav-menu">
+                            <span>거래내역</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="accordion2">
+                        <i class="fas fa-wallet"></i>지갑
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    <div class="accordion2-con">
+                        <a href="./deposit.html" class="nav-menu">
+                            <span>입금</span>
+                        </a>
+                        <a href="./withdraw.html" class="nav-menu">
+                            <span>출금</span>
+                        </a>
+                        <a href="./transactionHistory.html" class="nav-menu">
+                            <span>입출금내역</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./coupon.html" class="nav-menu">
+                        <i class="fas fa-ticket-alt"></i>쿠폰입력
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./affiliate.html" class="nav-menu active">
+                        <i class="fas fa-donate"></i>추천현황
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+        </nav>
+        <section class="mypage-section">
+            <h2 class="mypage-h2">추천현황</h2>
+            <div class="affiliate maypage-box">
+                <h3 class="mypage-h3">제목</h3>
+                <div class="affiliate-input-box">
+                    <input type="text" class="mypage-input">
+                    <button class="cloneBtn">복사</button>
+                </div>
+            </div>
+            <!-- <div class="incentive">
+                <h3>내 인센티브</h3>
+                <p>메시지</p>
+                <div class="dropdown affiliate-dropdown">
+                    <button class="btn dropdown-toggle affiliate-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bitcoin
+                    </button>
+                    <div class="dropdown-menu affiliate-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Bitcoin</a>
+                      <a class="dropdown-item" href="#">Ethereum</a>
+                      <a class="dropdown-item" href="#">USDT(Tether)</a>
+                      <a class="dropdown-item" href="#">거래소코인(미정)</a>
+                    </div>
+                </div>
+                <div class="incentive-table">
+                    <div class="incentive-title">
+                        <div class="col-title"></div>
+                        <div class="yesterday row-title">확정<br><span>(어제 00:00~23:59)</span></div>
+                        <div class="today row-title">계산중<br><span>(오늘 00:00~현재)</span></div>
+                    </div>
+                    <div class="incentive-content">
+                        <div class="col-title">전체 거래금액</div>
+                        <div class="yesterday">234,560,000</div>
+                        <div class="today">1,500,000</div>
+                    </div>
+                    <div class="incentive-content">
+                        <div class="col-title">인센티브</div>
+                        <div class="yesterday">5,000</div>
+                        <div class="today">356</div>
+                    </div>
+                </div>                
+            </div> -->
+            <!-- <div class="member-box">
+                <h3>내 회원</h3>
+                <p>메세지</p>
+                <div class="member">
+                    <div>
+                        <div>총 회원수</div>
+                        <div><span>50</span>명</div>
+                    </div>
+                    <div>
+                        <div>오늘 가입회원</div>
+                        <div><span>3</span>명</div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <script src="https://kit.fontawesome.com/2f92a2487f.js" crossorigin="anonymous"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/account.js"></script>
+    </body>
+</html>

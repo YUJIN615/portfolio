@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+body {
+    background:#0E1017;
+}
+
+.register-box {
+    color: #ddd;
+}
+
+.register-box > .divider-text {
+    padding:5px 20px 30px;
+}
+
+.register-box > div:nth-child(5) {
+    /*or*/
+    padding:15px 0;
+    position:relative;
+}
+
+.register-box > form > .register-input-box {
+    /*input감싼 div*/
+    width: 380px;
+    height:auto;
+    margin:0 auto;
+    padding: 5px 0;
+}
+
+.register-box > form > .register-input-box > div {
+    text-align: left;
+    margin-top: 2px;
+    font-size: 10px;
+    color: #EE2222;
+    height: 10px;
+}
+
+.register-box > form > .privacy-agree-box {
+    /*개인정보 보호정책 동의*/
+    width:400px;
+    height:25px;
+    margin:15px auto 0;
+    text-align:left;
+    font-size:14px;
+}
+
+.register-box > form > .privacy-agree-box input {
+    display:none;
+}
+
+.register-box > form > .privacy-agree-box input + label {
+    display:inline-block;
+    position:relative;
+    width:15px;
+    height:15px;
+    border:1px solid #bbb;
+    background:#eee;
+    border-radius:2px;
+}
+
+.register-box > form > .privacy-agree-box input:checked + label {
+    background:url(../img/checkbox.png) no-repeat center center;
+    background-size:14px 14px;
+    border:1px solid #0074bd;
+}
+
+.register-box > form > .privacy-agree-box input + label > span {
+    position:absolute;
+    top:-4px;
+    left:17px;
+    font-size:14px;
+    margin-left:5px;
+    width:300px;
+}
+
+.register-box > form > .privacy-agree-box a {
+    color:#3C59B1;
+    font-weight:600;
+}
+
+.register-box > form > .policy-agree-box {
+    /*약관 동의*/
+    width:400px;
+    height:25px;
+    margin:0 auto 20px;
+    text-align:left;
+    font-size:14px;
+}
+
+.register-box > form > .policy-agree-box input {
+    display:none;
+}
+
+.register-box > form > .policy-agree-box input + label {
+    display:inline-block;
+    position:relative;
+    width:15px;
+    height:15px;
+    border:1px solid #bbb;
+    background:#eee;
+    border-radius:2px;
+}
+
+.register-box > form > .policy-agree-box input:checked + label {
+    background:url(../img/checkbox.png) no-repeat center center;
+    background-size:14px 14px;
+    border:1px solid #0074bd;
+}
+
+.register-box > form > .policy-agree-box input + label > span {
+    position:absolute;
+    top:-4px;
+    left:17px;
+    font-size:14px;
+    margin-left:5px;
+    width:300px;
+}
+
+.register-box > form > .policy-agree-box a {
+    color:#3C59B1;
+    font-weight:600;
+}
+
+.register-box > form > .register-btn-box {
+    /*회원가입 버튼*/
+    margin-bottom:20px;
+}
+
+.register-box > form > .register-btn-box a {
+    display:block;
+    width:100%;
+    height:100%;
+    color:#fff;
+}
+
+.register-box > div:nth-child(7) {
+    /*위험성 경고*/
+    margin:0 auto;
+    font-size:14px;
+    padding-bottom:30px;
+}
+
+.register-box > div:nth-child(7) > span {
+    color:rgb(255, 94, 0);
+    font-weight:600;
+}
+
+.main-popup {
+    display:none;
+}
+
+.main-popup-content {
+    font-size:14px;
+}
+
+footer {
+    position:relative;
+    bottom:0;
+}
+
+@media screen and (max-width:1000px) {
+
+    .register-box {
+        width:95%;
+        margin:100px auto 50px;
+        height:auto;
+    }
+
+    .register-box > form > .register-input-box {
+        width:85%;
+        height:auto;
+    }
+
+    .register-box > form > div > input[type=text] {
+        width:100%;
+    }
+
+    .register-box > form > div > input[type=password] {
+        width:100%;
+    }
+
+    .register-box > form > div:nth-child(5) {
+        /*개인정보 보호정책 동의*/
+        width:85%;
+    }
+
+    .register-box > form > div:nth-child(6) {
+        /*이용약관*/
+        width:85%;
+    }
+
+    footer {
+        position:static;
+    }
+
+}
+

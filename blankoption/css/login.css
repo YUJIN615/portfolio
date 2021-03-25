@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+body {
+    background:#0E1017;
+}
+
+.login-box {
+    color: #ddd;
+}
+
+.login-box > .divider-text {
+    font-size:20px;
+    font-weight:600;
+    padding:5px 15px 20px;
+}
+
+.login-box > form > .login-input-box {
+    width:380px;
+    margin:0px auto;
+    padding:5px 0;
+}
+
+.login-box > form > .login-input-box > div {
+    text-align: left;
+    margin-top: 2px;
+    font-size: 10px;
+    color: #EE2222;
+    height: 10px;
+}
+
+.login-box > form > .autologin {
+    /*자동로그인*/
+    width:380px;
+    margin:3px auto;
+    text-align:left;
+}
+
+.login-box > form > .autologin > input {
+    display:none;
+}
+
+.login-box > form > .autologin > input[id="autologin"] + label {
+    display:inline-block;
+    position:relative;
+    width:15px;
+    height:15px;
+    border:1px solid #bbb;
+    background:#eee;
+    border-radius:2px;
+    margin-bottom:0;
+}
+
+.login-box > form > .autologin > input[id="autologin"]:checked + label {
+    background:url(../img/checkbox.png) no-repeat center center;
+    background-size:14px 14px;
+    border:1px solid #0074bd;
+}
+
+.login-box > form > .autologin > label > span {
+    position:absolute;
+    top:-4px;
+    left:17px;
+    font-size:14px;
+    margin-left:5px;
+    width:300px;
+}
+
+.login-box > form > .find-box {
+    /*비밀번호 찾기, 회원가입*/
+    width:385px;
+    margin:0 auto;
+    padding:15px 0 5px;
+    font-size:14px;
+}
+
+.login-box > form > .find-box > span {
+    display:block;
+    padding:2px 0;
+}
+
+.login-box > form > .find-box > span > a {
+    color:#3C59B1;
+    font-weight:600;
+}
+
+.login-box > form > .find-box > a:hover {
+    color:#666;
+}
+
+.login-box > form > .login-btn-box {
+    /*로그인 버튼*/
+    padding:20px 0 10px;
+}
+
+.login-box > form > .login-btn-box > button > a {
+    display:block;
+    width:100%;
+    height:100%;
+    color:#fff;
+}
+
+.login-box > .google-login-btn-box {
+    padding-bottom:40px;
+}
+
+.login-box > .google-login-btn-box > button > a {
+    /*구글로그인 버튼*/
+    display:block;
+    width:100%;
+    height:100%;
+    color:#fff;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+}
+
+@media screen and (max-width:1000px) {  
+
+    .login-box {
+        width:95%;
+        margin:100px auto 50px;
+    }
+
+    .login-box > form > .login-input-box {
+        width:85%;
+    }
+
+    .login-box > form > .autologin {
+        width:85%;
+    }
+    
+    .login-box > form > div > input {
+        width:100%;
+    }
+
+    .login-box > form > .find-box {
+        width:85%;
+    }
+
+    .login-box > form > .login-btn-box {
+        width:100%;
+    }
+    
+    .login-box > .google-login-btn-box {
+        width:100%;
+    }
+
+    footer {
+        position:static;
+    }
+}

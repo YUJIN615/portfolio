@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+.widthdraw-box {
+    position:relative;
+    padding: 30px 0;
+    width: 540px;
+}
+
+.withdraw-dropdown {
+    padding-bottom:20px;
+}
+
+.withdraw-btn {
+    border: 1px solid #909CD0;
+    width:100%;
+    text-align:left;
+    color:#ddd;
+    position:relative;
+    font-size:14px;
+}
+
+.withdraw-btn:hover {
+    color:#ddd;
+}
+
+.withdraw-btn::after {
+    position:absolute;
+    right:20px;
+    top:15px;
+}
+
+.withdraw-dropdown-menu {
+    width:100%;
+}
+
+.money {
+    padding:10px 0;
+}
+
+.money-content {
+    font-size:14px;
+    color: #bbb;
+}
+
+.money-content > div {
+    display:inline-block;
+    padding:13px 0;
+}
+
+.money-content > div:nth-child(1) {
+    width:60%;
+    margin-left:10px
+}
+
+.money-content > div:nth-child(2) {
+    width:20%;
+    color: #fff;
+}
+
+.money-content > div:nth-child(3) {
+    width:13%;
+    text-align: right;
+}
+
+.message {
+    font-size:14px;
+    padding-bottom:25px;
+    color:#ddd;
+}
+
+.withdraw-adress-content {
+    padding:5px 0 10px;
+    font-size:15px;
+    color: #bbb;
+}
+
+.withdraw-adress-content > div {
+    padding-bottom:10px;
+}
+
+.withdraw-adress-content > input {
+    width: 100%;
+}
+
+.withdraw-adress-content2 {
+    position:relative;
+}
+
+.symbol {
+    /*화폐종류*/
+    position:absolute;
+    top:43px;
+    right:20px;
+    color:#ddd;
+    font-size: 13px;
+}
+
+.cost {
+    padding:5px 0 20px;
+}
+
+.cost-content > div {
+    display:inline-block;
+    font-size:11px;
+    color:#bbb;
+    font-weight: 400;
+}
+
+.cost-content > div:nth-child(1) {
+    width:70%;
+}
+
+.cost-content > div:nth-child(2) {
+    width:15%;
+}
+
+.cost-content > div:nth-child(3) {
+    width:10%;
+    text-align:right;
+}
+
+.apply {
+    text-align:center;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .widthdraw-box {
+        width:100%;
+        margin:0 auto 20px;
+        padding:10px 0px;
+    }
+
+    .money-content > div:nth-child(1) {
+        margin-left:0px
+    }
+
+    .cost-content > div:nth-child(1) {
+        width:60%;
+    }
+    
+    .cost-content > div:nth-child(2) {
+        width:25%;
+    }
+    
+    .cost-content > div:nth-child(3) {
+        width:10%;
+        text-align:right;
+    }
+
+}

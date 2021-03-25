@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+.account-box {
+    position:relative;
+    padding-top: 20px;
+    width: 700px;
+}
+
+.mypage-section input {
+    width: 332px;
+
+}
+
+.account-profile {
+    height:130px;
+}
+
+.account-password {
+    height: 200px;
+}
+
+.password-input-box {
+    display:inline-block;
+}
+
+.password-input-box:nth-child(1) {
+    margin-right: 25px;
+}
+
+.password-button-box {
+    /*버튼*/
+    position:absolute;
+    bottom:30px;
+    right:0;
+}
+
+.password-button-box > button:nth-child(1) {
+    margin-right:12px;
+}
+
+/*추천 코드*/
+.recommend-code {
+    height:160px;
+}
+
+.recommend-code input {
+    width: 580px;
+}
+
+/*탈퇴하기*/
+.delete {
+    height: 60px;
+    border-bottom: 0;
+}
+
+.delete > h3 {
+    height:auto;
+}
+
+.delete > div  {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:0px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .account-box {
+        width:100%;
+        margin:0 auto 20px;
+        padding:10px 0px;
+    }
+
+    .account-profile {
+        height: 110px;
+    }
+
+    .account-password {
+        height: 230px;
+    }
+
+    .password-input-box {
+        display: block;
+    }
+
+    .password-input-box:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .password-button-box {
+        bottom: 20px;
+        right: 0px;
+    }
+
+    .recommend-code {
+        height:160px;
+    }
+
+    .recommend-code > button {
+        position:absolute;
+        right:0px;
+        bottom: 20px;
+    }
+    
+    .delete > h3 {
+        height: auto;
+    }
+}

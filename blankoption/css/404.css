@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+body {
+    background:#f5f5f5;
+}
+
+.error > div:nth-child(2) > i {
+    font-size:90px;
+    margin-bottom:30px;
+    color:#555;
+}
+
+.error > div:nth-child(3) {
+    font-weight:600;
+    font-size:20px;
+    padding:10px 0;
+}
+
+.error > div:nth-child(4) {
+    width:100%;
+    padding:10px 0;
+    text-align:center;
+    font-size:15px;
+}
+
+.error > div:nth-child(5) {
+    padding:20px 0 40px;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+}
+
+@media screen and (max-width:1000px) {
+
+    .error {
+        width:95%;
+        margin:100px auto 50px;
+    }
+
+    .error > form > div {
+        width:95%;
+    }
+
+    .error > form > div > input {
+        width:90%;
+    }
+
+    .error > div:nth-child(3) {
+        width:75%;
+        margin:0 auto;
+    }
+    
+    .error > div:nth-child(4) {
+        width:75%;
+        margin:0 auto;
+        font-size:14px;
+    }
+    
+    footer {
+        position:static;
+    }
+}

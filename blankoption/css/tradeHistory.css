@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+.tradeHistory {
+    margin-bottom:0;
+    overflow-x:scroll;
+    width:100%;
+}
+
+/*기간설정*/
+.period {
+    padding:20px 0;
+    color: #fff;
+    display: inline-block;
+}
+
+.period > span {
+    display:inline-block;
+    width:80px;
+    font-weight:600;
+}
+
+.period > button {
+    margin-right:2px;
+    background:rgba(55,61,85,0.3);
+    border:1px solid #373D55;
+    border-radius: 3px;
+    color:#ccc;
+    font-size: 10px;
+    width: 50px;
+    height: 22px;
+}
+
+.period > button.active {
+    background:#0074bd;
+    border:0;
+    color:#fff;
+}
+
+.date {
+    display: inline-block;
+    margin-left:20px;
+}
+
+.date i {
+    margin-left:5px;
+    margin-right:15px;
+    color:#4C5680;
+}
+
+.date input {
+    width:140px;
+    height:26px;
+    border:1px solid #4C5680;
+    border-radius: 3px;
+    text-indent:10px;
+    font-size:12px;
+    background:#0F121D;
+    color:#4C5680;
+}
+
+/*셀렉트 메뉴*/
+.select {
+    padding:5px 0;
+    min-width:1318px;
+}
+
+.select > span {
+    font-weight:600;
+    display:inline-block;
+    margin-left: 8px;
+    color: #4C5680;
+    font-size: 12px;
+}
+
+.select > select {
+    width:110px;
+    height: 24px;
+    vertical-align: middle;
+    background: transparent;
+    margin-left:30px;
+    font-size:12px;
+    color:#fff;
+    padding:2px;
+    border:0;
+}
+
+.select > span:nth-child(1):before {
+    display: none;
+}
+
+.select > span:before {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 25px;
+    border-right: 1px solid #4C5680;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.select > select > option {
+    background: #0E1017;
+}
+
+/*거래내역 타이틀*/
+.history-title {
+    padding:7px 0;
+    font-size:12px;
+    font-weight:600;
+    min-width:1318px;
+    color: #ccc;
+}
+
+.history-title > div {
+    display:inline-block;
+}
+
+.trade-time {
+    width:13%;
+}
+
+.symbol {
+    width:10%;
+}
+
+.type {
+    width:10%;
+}
+
+.trading {
+    width:10%;
+}
+
+.sum {
+    width:12%;
+}
+
+.market-price {
+    width:10%;
+}
+
+.closing-price {
+    width:12%;
+}
+
+.evaluated-price {
+    width:12%;
+}
+
+.result {
+    width:5%;
+}
+
+/*거래내역 콘텐츠*/
+.history-content {
+    padding-bottom:30px;
+    font-size:12px;
+    color:#bbb;
+    font-weight: 400;
+    min-width:1318px;
+}
+
+.history-content-row {
+    padding:8px 0;
+}
+
+.history-content-row > div {
+    display:inline-block;
+}
+
+i.fa-caret-up, i.fa-arrow-up, .revenue {
+    font-size:12px;
+    margin-right:5px;
+    color:#ff4a4a;
+}
+
+i.fa-caret-down, i.fa-arrow-down, .loss {
+    font-size:12px;
+    margin-right:5px;
+    color:#0074bd;
+}
+
+/*스크롤 디자인*/
+.tradeHistory::-webkit-scrollbar {
+    height: 8px;
+}
+
+.tradeHistory::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    background-color:#333953;
+}
+
+.tradeHistory::-webkit-scrollbar-track {
+    background-color:rgba(55,61,85,0.3);
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .tradeHistory {
+        width:1400px;
+    }
+
+    .date {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+}

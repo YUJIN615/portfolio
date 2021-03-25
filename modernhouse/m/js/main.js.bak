@@ -1,0 +1,17 @@
+$(function(){
+  //  alert('a');
+ var $window = $(window);
+  var $fullHt = $window.height();
+
+
+  $('section').height($fullHt);
+
+
+
+
+
+
+
+
+
+});
